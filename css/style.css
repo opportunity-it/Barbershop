@@ -1,7 +1,7 @@
 /* GENERAL STYLES */
 :root {
     --main-color: #303030;
-    --second-color: #555555
+    --second-color: #555555;
 }
 
 body {
@@ -161,7 +161,7 @@ header {
     color: #FFFFFF;
 }
 
-.services-text {
+.services-list .text {
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0.36px;
@@ -173,7 +173,7 @@ header {
     color: rgba(157, 164, 189, 0.12); ПОТІМ РОЗКОМЕНТУВАТИ
 } */
 
-.text-right {
+.services-list .text-right {
     color: #9DA4BD;
 }
 
@@ -188,9 +188,54 @@ header {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+/* STYLES BENEFITS */
+.benefits .number {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 2.1px;
+
+    color: var(--main-color);
+}
+
+.plus {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    color: #FF6C00;
+}
+
+.benefits-text {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--main-color);
+}
+
+.benefits-subtitle {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    color: var(--main-color);
+}
+
+.benefits-title {
+    color: var(--main-color);
+}
+
+.benefits .after-title {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.36px;
+
+    color: var(--second-color);
 }
