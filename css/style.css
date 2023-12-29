@@ -70,7 +70,8 @@ header {
 }
 
 /* HERO STYLES */
-.hero-link {
+.hero-link,
+.footer-link {
     font-size: 11px;
     font-weight: 600;
     line-height: 1.4;
@@ -213,6 +214,7 @@ header {
 }
 
 .benefits-text {
+    text-align: center;
     font-size: 11px;
     font-weight: 600;
     line-height: 1.4;
@@ -238,4 +240,112 @@ header {
     letter-spacing: 0.36px;
 
     color: var(--second-color);
+}
+
+/* STYLES BARBERS */
+.barbers-subtitle {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    color: var(--main-color);
+}
+
+.barbers-title {
+    color: var(--main-color);
+}
+
+.barbers-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.36px;
+    color: var(--main-color);
+}
+
+.barbers .job {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.28px;
+
+    color: #FF6C00;
+}
+
+/* STYLES GALLERY */
+.gallery-subtitle {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    color: var(--main-color);
+}
+
+/* STYLES BOOKING */
+.booking-title {
+    color: #FFFFFF;
+}
+
+/* STYLES CONTACTS */
+.contacts-title {
+    color: #FFFFFF;
+}
+
+.contacts-street {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.36px;
+
+    color: #9DA4BD;
+}
+
+.contacts-tel {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.36px;
+
+    color: #9DA4BD;
+}
+
+.contacts-mail {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.36px;
+    text-decoration-line: underline;
+
+    color: #9DA4BD;
+}
+
+.contacts .text {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    color: #FFF;
+}
+
+.contacts .day-time {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.36px;
+
+    color: #9DA4BD;
+}
+
+/* STYLES-FOOTER */
+.footer-text {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 2.2px;
+
+    color: #9DA4BD;
 }
