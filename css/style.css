@@ -1,7 +1,11 @@
 /* GENERAL STYLES */
 :root {
     --main-color: #303030;
-    --second-color: #555555;
+    --second-color: #FFFFFF;
+    --auxiliary-color: #9DA4BD;
+    --text-color: #555555;
+    --basic-font-weight: 600;
+    --text-subtitle-case: uppercase;
 }
 
 body {
@@ -21,10 +25,10 @@ ul {
 .button {
     font-family: inherit;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.3;
     letter-spacing: 1.08px;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 }
 
 .title {
@@ -43,11 +47,11 @@ header {
 .header-link {
     font-family: Open Sans;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.3;
     letter-spacing: 1.2px;
 
-    color: #FFFFFF
+    color: var(--second-color)
 }
 
 .header-link:hover,
@@ -57,23 +61,23 @@ header {
 
 .header-tel {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.3;
     letter-spacing: 1.2px;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 .header-button {
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 /* HERO STYLES */
 .hero-link,
 .footer-link {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
     letter-spacing: 2.2px;
 
@@ -87,9 +91,9 @@ header {
 
 .hero-subtitle {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
     color: rgba(157, 164, 189, 0.60);
 }
@@ -100,7 +104,7 @@ header {
     line-height: 1.2;
     letter-spacing: 3.6px;
 
-    color: #FFFFFF;
+    color: var(--second-color);
     background-color: gray;
     /*ПОТІМ ВИДАЛИТИ */
 }
@@ -111,15 +115,15 @@ header {
     line-height: 1.7;
     letter-spacing: 0.36px;
 
-    color: #9DA4BD;
+    color: var(--auxiliary-color);
 }
 
 /* ABOUT STYLES */
 .about-subtitle {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
     color: var(--main-color);
 }
@@ -133,7 +137,7 @@ header {
     line-height: 1.7;
     letter-spacing: 0.36px;
 
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 .about-text {
@@ -141,7 +145,7 @@ header {
     line-height: 1.9;
     letter-spacing: 0.28px;
 
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 .about-button {
@@ -151,15 +155,15 @@ header {
 /* STYLES SERVICES AND PRICES */
 .services-subtitle {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
     color: rgba(157, 164, 189, 0.60);
 }
 
 .services-title {
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 .services-list .text {
@@ -175,11 +179,11 @@ header {
 } */
 
 .services-list .text-right {
-    color: #9DA4BD;
+    color: var(--auxiliary-color);
 }
 
 .services-button {
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 .visually-hidden {
@@ -207,7 +211,7 @@ header {
 
 .plus {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
 
     color: #FF6C00;
@@ -216,16 +220,16 @@ header {
 .benefits-text {
     text-align: center;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
     color: var(--main-color);
 }
 
 .benefits-subtitle {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
     color: var(--main-color);
 }
@@ -239,15 +243,15 @@ header {
     line-height: 1.7;
     letter-spacing: 0.36px;
 
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 /* STYLES BARBERS */
 .barbers-subtitle {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
     color: var(--main-color);
 }
@@ -277,21 +281,21 @@ header {
 /* STYLES GALLERY */
 .gallery-subtitle {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
     color: var(--main-color);
 }
 
 /* STYLES BOOKING */
 .booking-title {
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 /* STYLES CONTACTS */
 .contacts-title {
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 .contacts-street {
@@ -301,7 +305,7 @@ header {
     line-height: 1.7;
     letter-spacing: 0.36px;
 
-    color: #9DA4BD;
+    color: var(--auxiliary-color);
 }
 
 .contacts-tel {
@@ -310,7 +314,7 @@ header {
     line-height: 1.7;
     letter-spacing: 0.36px;
 
-    color: #9DA4BD;
+    color: var(--auxiliary-color);
 }
 
 .contacts-mail {
@@ -320,14 +324,14 @@ header {
     letter-spacing: 0.36px;
     text-decoration-line: underline;
 
-    color: #9DA4BD;
+    color: var(--auxiliary-color);
 }
 
 .contacts .text {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
-    text-transform: uppercase;
+    text-transform: var(--text-subtitle-case);
 
     color: #FFF;
 }
@@ -337,15 +341,15 @@ header {
     line-height: 1.7;
     letter-spacing: 0.36px;
 
-    color: #9DA4BD;
+    color: var(--auxiliary-color);
 }
 
 /* STYLES-FOOTER */
 .footer-text {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: var(--basic-font-weight);
     line-height: 1.4;
     letter-spacing: 2.2px;
 
-    color: #9DA4BD;
+    color: var(--auxiliary-color);
 }
