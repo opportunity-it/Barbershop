@@ -14,6 +14,13 @@ body {
     /* ПОТІМ ВИДАЛИТИ */
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 a {
     text-decoration: none;
 }
@@ -38,7 +45,8 @@ ul {
     letter-spacing: 2.1px;
 }
 
-header {
+.header {
+    padding-top: 32px;
     background-color: gray;
     /* ПОТІМ ВИДАЛИТИ */
 }
