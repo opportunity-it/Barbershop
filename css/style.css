@@ -259,6 +259,15 @@ ul {
 }
 
 /* STYLES BENEFITS */
+.benefits {
+    padding-top: 129px;
+    padding-bottom: 120px;
+}
+
+.benefits-item {
+    margin-bottom: 30px;
+}
+
 .benefits .number {
     font-size: 42px;
     font-weight: 700;
@@ -285,6 +294,7 @@ ul {
 }
 
 .benefits-subtitle {
+    margin-bottom: 20px;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -294,6 +304,7 @@ ul {
 }
 
 .benefits-title {
+    margin-bottom: 20px;
     color: var(--main-color);
 }
 
@@ -306,7 +317,13 @@ ul {
 }
 
 /* STYLES BARBERS */
+.barbers {
+    padding-top: 123px;
+    margin-bottom: 64px;
+}
+
 .barbers-subtitle {
+    margin-bottom: 20px;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -316,10 +333,16 @@ ul {
 }
 
 .barbers-title {
+    margin-bottom: 44px;
     color: var(--main-color);
 }
 
+.barbers-img {
+    margin-bottom: 30px;
+}
+
 .barbers-name {
+    margin-bottom: 8px;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
@@ -338,7 +361,13 @@ ul {
 }
 
 /* STYLES GALLERY */
+.gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .gallery-subtitle {
+    margin-bottom: 44px;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -348,16 +377,29 @@ ul {
 }
 
 /* STYLES BOOKING */
+.booking {
+    padding-top: 130px;
+    padding-bottom: 183px;
+}
+
 .booking-title {
     color: var(--second-color);
 }
 
 /* STYLES CONTACTS */
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
 .contacts-title {
+    margin-bottom: 40px;
     color: var(--second-color);
 }
 
 .contacts-street {
+    display: inline-block;
+    margin-bottom: 20px;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -368,6 +410,8 @@ ul {
 }
 
 .contacts-tel {
+    display: inline-block;
+    margin-bottom: 20px;
     font-size: 18px;
     font-style: normal;
     line-height: 1.7;
@@ -377,6 +421,8 @@ ul {
 }
 
 .contacts-mail {
+    display: inline-block;
+    margin-bottom: 70px;
     font-size: 18px;
     font-style: normal;
     line-height: 1.7;
@@ -387,6 +433,7 @@ ul {
 }
 
 .contacts .text {
+    margin-bottom: 20px;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -404,6 +451,11 @@ ul {
 }
 
 /* STYLES-FOOTER */
+.footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
 .footer-text {
     font-size: 11px;
     font-weight: var(--basic-font-weight);
