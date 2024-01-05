@@ -21,12 +21,21 @@ body {
     padding-right: 15px;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 ul {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 .button {
@@ -45,13 +54,15 @@ ul {
     letter-spacing: 2.1px;
 }
 
+/* HEADER STYLES */
 .header {
     padding-top: 32px;
-    background-color: gray;
+    padding-bottom: 32px;
     /* ПОТІМ ВИДАЛИТИ */
+    background-color: gray;
+    outline: 2px solid red;
 }
 
-/* HEADER STYLES */
 .header-link {
     font-family: Open Sans;
     font-size: 12px;
@@ -97,7 +108,14 @@ ul {
     color: #FF6C00;
 }
 
+.hero-description {
+    padding-top: 150px;
+    padding-left: 200px;
+    padding-bottom: 208px;
+}
+
 .hero-subtitle {
+    margin-bottom: 20px;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -107,6 +125,7 @@ ul {
 }
 
 .hero-title {
+    margin-bottom: 20px;
     font-family: Raleway;
     font-size: 72px;
     line-height: 1.2;
@@ -127,7 +146,13 @@ ul {
 }
 
 /* ABOUT STYLES */
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .about-subtitle {
+    margin-bottom: 20px;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -137,10 +162,12 @@ ul {
 }
 
 .about-title {
+    margin-bottom: 20px;
     color: var(--main-color);
 }
 
-.about>.text-visit {
+.about .text-visit {
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0.36px;
@@ -149,6 +176,7 @@ ul {
 }
 
 .about-text {
+    margin-bottom: 42px;
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: 0.28px;
