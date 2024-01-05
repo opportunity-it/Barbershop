@@ -138,8 +138,8 @@ ul {
     letter-spacing: 3.6px;
 
     color: var(--second-color);
-    background-color: gray;
     /*ПОТІМ ВИДАЛИТИ */
+    background-color: gray;
 }
 
 .hero-text {
@@ -195,7 +195,14 @@ ul {
 }
 
 /* STYLES SERVICES AND PRICES */
+
+.services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .services-subtitle {
+    margin-bottom: 20px;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -205,7 +212,12 @@ ul {
 }
 
 .services-title {
+    margin-bottom: 44px;
     color: var(--second-color);
+}
+
+.services-list {
+    padding: 30px 20px;
 }
 
 .services-list .text {
@@ -222,6 +234,11 @@ ul {
 
 .services-list .text-right {
     color: var(--auxiliary-color);
+}
+
+.services .item-left,
+.services .item-right {
+    margin-bottom: 20px;
 }
 
 .services-button {
