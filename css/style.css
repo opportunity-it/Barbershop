@@ -69,7 +69,18 @@ ul {
     outline: 2px solid red;
 }
 
+.header-list {
+    display: flex;
+}
+
+.header-item+.header-item {
+    margin-left: 30px;
+}
+
 .header-link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: Open Sans;
     font-size: 12px;
     font-weight: var(--basic-font-weight);
