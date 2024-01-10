@@ -108,13 +108,10 @@ ul {
 }
 
 .header .tel-button {
-    display: flex;
     margin-left: auto;
-    align-items: center;
 }
 
 .header-tel {
-    display: block;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-right: 40px;
