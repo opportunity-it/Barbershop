@@ -108,6 +108,8 @@ ul {
 }
 
 .header .tel-button {
+    display: flex;
+    align-items: center;
     margin-left: auto;
 }
 
