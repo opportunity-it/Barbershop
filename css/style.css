@@ -131,6 +131,14 @@ ul {
 }
 
 /* HERO STYLES */
+.hero .container {
+    display: flex;
+}
+
+.hero-list {
+    width: 100px;
+}
+
 .hero-link,
 .footer-link {
     color: var(--main-color);
@@ -149,8 +157,9 @@ ul {
 
 .hero-description {
     padding-top: 150px;
-    padding-left: 200px;
+    padding-left: 100px;
     padding-bottom: 208px;
+    flex-grow: 1;
 }
 
 .hero-subtitle {
@@ -191,6 +200,14 @@ ul {
 .about {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.about .container {
+    display: flex;
+}
+
+.about-img {
+    margin-right: 30px;
 }
 
 .about-subtitle {
