@@ -269,8 +269,20 @@ ul {
     color: var(--second-color);
 }
 
+.our-price {
+    display: flex;
+    margin-bottom: 44px;
+}
+
 .services-list {
     padding: 30px 20px;
+    width: calc((100% - 30px) / 2);
+    outline: 1px solid red;
+
+}
+
+.services-list+.services-list {
+    margin-left: 30px;
 }
 
 .services-list .text {
@@ -291,10 +303,19 @@ ul {
 
 .services .item-left,
 .services .item-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .item-left:not(:last-child),
+.services .item-right:not(:last-child) {
     margin-bottom: 20px;
 }
 
 .services-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     color: var(--second-color);
 }
 
@@ -313,7 +334,7 @@ ul {
 
 /* STYLES BENEFITS */
 .benefits {
-    padding-top: 129px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -371,8 +392,8 @@ ul {
 
 /* STYLES BARBERS */
 .barbers {
-    padding-top: 123px;
-    margin-bottom: 64px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .barbers-subtitle {
@@ -389,6 +410,16 @@ ul {
     margin-bottom: 44px;
     color: var(--main-color);
 }
+
+.barbers-list {
+    display: flex;
+    margin: -15px;
+}
+
+.barbers-item {
+    margin: 15px;
+}
+
 
 .barbers-img {
     margin-bottom: 30px;
@@ -417,6 +448,14 @@ ul {
 .gallery {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.gallery-list {
+    display: flex;
+}
+
+.gallery-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .gallery-subtitle {
