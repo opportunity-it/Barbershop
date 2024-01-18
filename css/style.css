@@ -160,6 +160,7 @@ ul {
     padding-left: 100px;
     padding-bottom: 208px;
     flex-grow: 1;
+    background-image: url('../images/bg-hero-opt.jpg');
 }
 
 .hero-subtitle {
@@ -177,8 +178,6 @@ ul {
     margin-bottom: 20px;
 
     color: var(--second-color);
-    /*ПОТІМ ВИДАЛИТИ */
-    background-color: gray;
 
     font-family: Raleway;
     font-size: 72px;
