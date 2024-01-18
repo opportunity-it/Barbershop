@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: gray;
+    /* background-color: gray; */
     /* ПОТІМ ВИДАЛИТИ */
 }
 
@@ -160,7 +160,7 @@ ul {
     padding-left: 100px;
     padding-bottom: 208px;
     flex-grow: 1;
-    background: rgba(25, 28, 38, 0.2);
+    background-color: rgba(25, 28, 38, 0.2);
     background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url('../images/bg-hero-opt.jpg');
 }
 
@@ -252,6 +252,11 @@ ul {
 .services {
     padding-top: 120px;
     padding-bottom: 120px;
+    /* background-color: #000;
+    background-image: url('../images/bg-services.png'); */
+    background-image: url('../images/bg-services.png'), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+    background-position: center;
+    background-size: cover;
 }
 
 .services-subtitle {
