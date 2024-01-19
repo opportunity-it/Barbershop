@@ -56,6 +56,23 @@ ul {
     cursor: pointer;
 }
 
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-weight: var(--basic-font-weight);
+    line-height: 1.4;
+    text-transform: var(--text-subtitle-case);
+}
+
+.subtitle::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+}
+
 .title {
     font-family: Raleway;
     font-size: 42px;
@@ -160,21 +177,19 @@ ul {
     padding-left: 100px;
     padding-bottom: 208px;
     flex-grow: 1;
+
     background-color: rgba(25, 28, 38, 0.2);
     background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url('../images/bg-hero-opt.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.hero-subtitle {
-    margin-bottom: 20px;
-
+.hero-description>.subtitle {
     color: rgba(157, 164, 189, 0.60);
-    font-size: 11px;
-    font-weight: var(--basic-font-weight);
-    line-height: 1.4;
-    text-transform: var(--text-subtitle-case);
+}
 
+.hero-description>.subtitle::before {
+    background-color: rgba(157, 164, 189, 0.60);
 }
 
 .hero-title {
@@ -212,14 +227,12 @@ ul {
     margin-right: 30px;
 }
 
-.about-subtitle {
-    margin-bottom: 20px;
-    font-size: 11px;
-    font-weight: var(--basic-font-weight);
-    line-height: 1.4;
-    text-transform: var(--text-subtitle-case);
-
+.about-wrapper .subtitle {
     color: var(--main-color);
+}
+
+.about-wrapper .subtitle::before {
+    background-color: var(--main-color);
 }
 
 .about-title {
@@ -261,14 +274,12 @@ ul {
     background-size: cover;
 }
 
-.services-subtitle {
-    margin-bottom: 20px;
-    font-size: 11px;
-    font-weight: var(--basic-font-weight);
-    line-height: 1.4;
-    text-transform: var(--text-subtitle-case);
-
+.services .subtitle {
     color: rgba(157, 164, 189, 0.60);
+}
+
+.services .subtitle::before {
+    background-color: rgba(157, 164, 189, 0.60);
 }
 
 .services-title {
@@ -383,14 +394,12 @@ ul {
     color: var(--main-color);
 }
 
-.benefits-subtitle {
-    margin-bottom: 20px;
-    font-size: 11px;
-    font-weight: var(--basic-font-weight);
-    line-height: 1.4;
-    text-transform: var(--text-subtitle-case);
-
+.benefits .subtitle {
     color: var(--main-color);
+}
+
+.benefits .subtitle::before {
+    background-color: #303030;
 }
 
 .benefits-title {
@@ -413,14 +422,13 @@ ul {
     background-color: #F7F7F7;
 }
 
-.barbers-subtitle {
-    margin-bottom: 20px;
-    font-size: 11px;
-    font-weight: var(--basic-font-weight);
-    line-height: 1.4;
-    text-transform: var(--text-subtitle-case);
-
+.barbers .subtitle {
     color: var(--main-color);
+}
+
+.barbers .subtitle::before {
+    background-color: #303030;
+    ;
 }
 
 .barbers-title {
@@ -475,14 +483,14 @@ ul {
     margin-right: 30px;
 }
 
-.gallery-subtitle {
+.gallery .subtitle {
     margin-bottom: 44px;
-    font-size: 11px;
-    font-weight: var(--basic-font-weight);
-    line-height: 1.4;
-    text-transform: var(--text-subtitle-case);
 
     color: var(--main-color);
+}
+
+.gallery .subtitle::before {
+    background-color: #303030;
 }
 
 /* STYLES BOOKING-CONTACTS */
@@ -491,9 +499,6 @@ ul {
     background-color: #191C26;
     display: flex;
     justify-content: space-between;
-    /* background-image: url('../images/bg-contacts.png');
-    background-repeat: no-repeat;
-    background-position: right; */
 }
 
 /* STYLES BOOKING */
@@ -511,6 +516,7 @@ ul {
 .contacts {
     padding-top: 130px;
     padding-bottom: 120px;
+    padding-left: 100px;
     width: 50%;
     background-image: url('../images/bg-contacts.png');
 }
@@ -555,14 +561,12 @@ ul {
     color: var(--auxiliary-color);
 }
 
-.contacts .text {
-    margin-bottom: 20px;
-    font-size: 11px;
-    font-weight: var(--basic-font-weight);
-    line-height: 1.4;
-    text-transform: var(--text-subtitle-case);
-
+.contacts .subtitle {
     color: #FFF;
+}
+
+.contacts .subtitle::before {
+    background-color: rgba(157, 164, 189, 0.40);
 }
 
 .contacts .day-time {
