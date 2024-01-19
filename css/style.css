@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* background-color: gray; */
+    background-color: gray;
     /* ПОТІМ ВИДАЛИТИ */
 }
 
@@ -356,6 +356,7 @@ ul {
 
 .benefits-item {
     margin-bottom: 30px;
+
 }
 
 .benefits .number {
@@ -376,7 +377,6 @@ ul {
 }
 
 .benefits-text {
-    text-align: center;
     font-size: 11px;
     font-weight: var(--basic-font-weight);
     line-height: 1.4;
@@ -410,6 +410,7 @@ ul {
 .barbers {
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: #F7F7F7;
 }
 
 .barbers-subtitle {
@@ -484,10 +485,22 @@ ul {
     color: var(--main-color);
 }
 
+/* STYLES BOOKING-CONTACTS */
+
+.booking-contacts {
+    background-color: #191C26;
+    display: flex;
+    justify-content: space-between;
+    /* background-image: url('../images/bg-contacts.png');
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
 /* STYLES BOOKING */
 .booking {
-    padding-top: 130px;
-    padding-bottom: 183px;
+    /* padding-top: 130px;
+    padding-bottom: 183px; ДОБАВИТИ ЗАГОЛОВОК У ВЕРСТКУ*/
+
 }
 
 .booking-title {
@@ -498,6 +511,8 @@ ul {
 .contacts {
     padding-top: 130px;
     padding-bottom: 120px;
+    width: 50%;
+    background-image: url('../images/bg-contacts.png');
 }
 
 .contacts-title {
