@@ -438,6 +438,8 @@ ul {
 
 .barbers-list {
     display: flex;
+    /* margin-right: -30px; */
+    background-color: yellow;
     margin: -15px;
 }
 
@@ -461,12 +463,36 @@ ul {
 }
 
 .barbers .job {
+    margin-bottom: 30px;
     text-align: center;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.28px;
 
     color: #FF6C00;
+}
+
+.barbers-list .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-item>.social-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 /* STYLES GALLERY */
@@ -503,8 +529,9 @@ ul {
 
 /* STYLES BOOKING */
 .booking {
-    /* padding-top: 130px;
-    padding-bottom: 183px; ДОБАВИТИ ЗАГОЛОВОК У ВЕРСТКУ*/
+    padding-top: 130px;
+    padding-bottom: 183px;
+    /* ДОБАВИТИ ЗАГОЛОВОК У ВЕРСТКУ */
 
 }
 
