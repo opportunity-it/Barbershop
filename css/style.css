@@ -437,10 +437,8 @@ ul {
 }
 
 .barbers-list {
-    display: flex;
-    /* margin-right: -30px; */
-    background-color: yellow;
     margin: -15px;
+    display: flex;
 }
 
 .barbers-item {
@@ -494,7 +492,6 @@ ul {
     height: 100%;
 
     border-radius: 50%;
-    background-color: aqua;
     color: #303030;
 }
 
@@ -571,38 +568,31 @@ ul {
 }
 
 .contacts-street {
-    display: inline-block;
     margin-bottom: 20px;
-    font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 1.7;
-    letter-spacing: 0.36px;
 
     color: var(--auxiliary-color);
 }
 
 .contacts-tel {
-    display: inline-block;
     margin-bottom: 20px;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 1.7;
-    letter-spacing: 0.36px;
 
     color: var(--auxiliary-color);
 }
 
 .contacts-mail {
-    display: inline-block;
     margin-bottom: 70px;
+    text-decoration-line: underline;
+
+    color: var(--auxiliary-color);
+}
+
+.contacts .info {
+    display: inline-block;
     font-size: 18px;
     font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.36px;
-    text-decoration-line: underline;
-
-    color: var(--auxiliary-color);
 }
 
 .contacts .subtitle {
