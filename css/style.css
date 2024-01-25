@@ -495,12 +495,6 @@ ul {
     color: #303030;
 }
 
-.social-item>.social-link:hover,
-.social-item>.social-link:focus {
-    background-color: #FFFFFF;
-}
-
-
 .social-link>.icon {
     fill: currentColor;
 }
@@ -567,32 +561,49 @@ ul {
     color: var(--second-color);
 }
 
-.contacts-street {
+.item-map {
     margin-bottom: 20px;
-    font-weight: 700;
-
-    color: var(--auxiliary-color);
 }
 
-.contacts-tel {
-    margin-bottom: 20px;
-
-    color: var(--auxiliary-color);
-}
-
-.contacts-mail {
-    margin-bottom: 70px;
-    text-decoration-line: underline;
-
-    color: var(--auxiliary-color);
-}
-
-.contacts .info {
-    display: inline-block;
+.contacts .contacts-link {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.36px;
+
+    color: var(--auxiliary-color);
+}
+
+.contacts-map {
+    font-weight: 700;
+}
+
+.icon-contacts {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+}
+
+
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+    color: #FF6C00
+}
+
+.item-tel {
+    margin-bottom: 20px;
+}
+
+.item-mail {
+    margin-bottom: 70px;
+}
+
+.contacts .contacts-mail {
+    text-decoration-line: underline;
 }
 
 .contacts .subtitle {
