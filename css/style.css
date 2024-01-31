@@ -9,6 +9,7 @@
 }
 
 body {
+    padding-top: 60px;
     font-family: 'Open Sans', sans-serif;
     background-color: gray;
     /* ПОТІМ ВИДАЛИТИ */
@@ -82,8 +83,13 @@ ul {
 
 /* HEADER STYLES */
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* padding-top: 32px; */
+    /* padding-bottom: 32px; */
     /* ПОТІМ ВИДАЛИТИ */
     background-color: gray;
 }
@@ -309,7 +315,8 @@ ul {
 }
 
 .services-second {
-    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
+    background-image: linear-gradient(180deg, rgba(9, 11, 19, 1),
+            rgba(9, 11, 19, 0.20) 100%);
 }
 
 .services-list+.services-list {
