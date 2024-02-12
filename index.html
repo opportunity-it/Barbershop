@@ -41,9 +41,18 @@
         </nav>
         <div class="tel-button">
           <a href="tel:+380441111111" class="header-tel">+38 044 111 11 11</a>
-          <button type="button" class="header-button button">
+          <button type="button" class="header-button button" data-open-modal>
             Online-booking
           </button>
+        </div>
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Officiis, ex!
+            </p>
+            <button data-close-modal>Закрити</button>
+          </div>
         </div>
       </div>
     </header>
@@ -110,7 +119,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-button button">
+            <button type="button" class="about-button button" data-open-modal>
               Online-booking
             </button>
           </div>
@@ -159,7 +168,7 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="services-button button">
+          <button type="button" class="services-button button" data-open-modal>
             Online-booking
           </button>
         </div>
@@ -485,5 +494,25 @@
         </ul>
       </div>
     </footer>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
   </body>
 </html>
