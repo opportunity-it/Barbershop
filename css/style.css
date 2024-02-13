@@ -11,7 +11,7 @@
 body {
     padding-top: 60px;
     font-family: 'Open Sans', sans-serif;
-    background-color: gray;
+    /* background-color: gray; */
     /* ПОТІМ ВИДАЛИТИ */
 }
 
@@ -91,7 +91,7 @@ ul {
     /* padding-top: 32px; */
     /* padding-bottom: 32px; */
     /* ПОТІМ ВИДАЛИТИ */
-    background-color: gray;
+    background: rgba(25, 28, 38, 0.2);
 }
 
 .header>.main-list {
