@@ -519,9 +519,33 @@ ul {
     margin: 15px;
 }
 
-
-.barbers-img {
+.description-img {
+    position: relative;
     margin-bottom: 30px;
+}
+
+/* .barbers-img {
+    margin-bottom: 30px;
+} */
+
+.barbers-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+
+    color: #303030;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+
+
+.barbers-item:hover .barbers-description,
+.barbers-item:focus .barbers-description {
+    opacity: 1;
+    border: 1px solid #000000;
 }
 
 .barbers-name {
