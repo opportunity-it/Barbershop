@@ -99,12 +99,13 @@ img {
     /* padding-top: 32px; */
     /* padding-bottom: 32px; */
     /* ПОТІМ ВИДАЛИТИ */
-    background: rgba(25, 28, 38, 0.2);
 }
 
 .header>.main-list {
     display: flex;
     align-items: center;
+
+    background: rgba(25, 28, 38, 0.2);
 }
 
 .header-logo {
