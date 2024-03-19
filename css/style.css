@@ -108,6 +108,10 @@ img {
     background: rgba(25, 28, 38, 0.2);
 }
 
+.header-nav {
+    display: flex;
+}
+
 .header-logo {
     margin-right: 131px;
 }
