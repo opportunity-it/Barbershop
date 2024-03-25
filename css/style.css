@@ -390,8 +390,11 @@ img {
 /* STYLES SERVICES AND PRICES */
 
 .services {
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 120px;
     padding-bottom: 120px;
+    max-width: 1660px;
     background-image: url("../images/bg-services.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     background-position: center;
     background-size: cover;
@@ -712,9 +715,13 @@ img {
 /* STYLES BOOKING-CONTACTS */
 
 .booking-contacts {
-    background-color: #191c26;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1660px;
     display: flex;
     justify-content: space-between;
+
+    background-color: #191c26;
 }
 
 /* STYLES BOOKING */
