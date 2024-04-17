@@ -261,9 +261,6 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-
-    background-color: yellow;
-    outline: 1px solid red;
 }
 
 .hero-list.rotation {
@@ -647,14 +644,14 @@ img {
 
     background-color: rgba(255, 108, 0, 0.5);
 
-    transform: translateY(100%);
+    transform: translateX(100%);
     opacity: 0;
 
     transition: transform 250ms linear, opacity 250ms linear;
 }
 
-.description-img:hover .wrapper-text {
-    transform: translateY(0);
+.barbers-item:hover .wrapper-text {
+    transform: translateX(0);
     opacity: 1;
 }
 
