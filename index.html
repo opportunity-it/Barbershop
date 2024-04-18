@@ -62,11 +62,12 @@
         </div>
         <div class="backdrop is-hidden" data-backdrop>
           <div class="modal">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Officiis, ex!
-            </p>
-            <button data-close-modal>Закрити</button>
+            <p></p>
+            <button class="button-close" data-close-modal>
+              <svg class="close-modal" width="18" height="18">
+                <use href="./images/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -582,30 +583,7 @@
         </ul>
       </div>
     </footer>
-    <script>
-      const refs = {
-        openModalBtns: document.querySelectorAll("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
-
-      refs.openModalBtns.forEach(function (btn) {
-        btn.addEventListener("click", toggleModal);
-      });
-
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-        console.log("Це при кліці в бекдроп");
-      }
-    </script>
-
+    <script src="./js/modal.js"></script>
     <!-- <script>
       const { height: pageHeaderHeight } = document
         .querySelector(".header")
