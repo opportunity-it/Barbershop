@@ -270,8 +270,6 @@ img {
     border: 1px solid var(--main-color);
 }
 
-.close-modal {}
-
 /* HERO STYLES */
 .hero .container {
     display: flex;
@@ -487,9 +485,7 @@ img {
 }
 
 .services-list .text-left {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-    color: rgba(157, 164, 189, 0.12);
+    color: #000000;
 }
 
 .services-list .text-right {
