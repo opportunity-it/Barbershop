@@ -607,7 +607,8 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-backdrop>
+    <!-- MODAL WINDOW -->
+    <div class="backdrop" data-backdrop>
       <div class="modal">
         <button class="button-close" data-close-modal>
           <svg class="close-modal" width="18" height="18">
@@ -630,10 +631,22 @@
                 name="name"
                 class="modal-input"
                 placeholder="&nbsp;"
+                required
+                minlength="3"
               />
               <span class="modal-span">Ім'я</span>
               <svg class="icon-modal">
                 <use href="./images/sprite.svg#person"></use>
+              </svg>
+              <svg class="modal-alert" width="20" height="20">
+                <use
+                  class="svg-success"
+                  href="./images/sprite.svg#success"
+                ></use>
+                <use
+                  class="svg-warning"
+                  href="./images/sprite.svg#warning"
+                ></use>
               </svg>
             </label>
             <label class="modal-label">
@@ -641,14 +654,24 @@
                 type="tel"
                 name="tel"
                 class="modal-input"
-                placeholder=""
+                placeholder="&nbsp;"
+                required
                 minlength="12"
                 maxlength="12"
-                aria-placeholder="&nbsp;"
               />
               <span class="modal-span">Телефон</span>
               <svg class="icon-modal">
                 <use href="./images/sprite.svg#phone"></use>
+              </svg>
+              <svg class="modal-alert" width="20" height="20">
+                <use
+                  class="svg-success"
+                  href="./images/sprite.svg#success"
+                ></use>
+                <use
+                  class="svg-warning"
+                  href="./images/sprite.svg#warning"
+                ></use>
               </svg>
             </label>
             <label class="modal-label">
@@ -657,10 +680,21 @@
                 name="mail"
                 class="modal-input"
                 placeholder="&nbsp;"
+                required
               />
               <span class="modal-span">Імейл</span>
               <svg class="icon-modal">
                 <use href="./images/sprite.svg#email"></use>
+              </svg>
+              <svg class="modal-alert" width="20" height="20">
+                <use
+                  class="svg-success"
+                  href="./images/sprite.svg#success"
+                ></use>
+                <use
+                  class="svg-warning"
+                  href="./images/sprite.svg#warning"
+                ></use>
               </svg>
             </label>
             <label class="modal-label">
@@ -676,10 +710,11 @@
           <label class="modal-label policy">
             <input type="checkbox" name="policy" class="checkbox" />
             <span class="text-policy"
-              >Я погоджуюся з <a href="">Умовами конфіденційності</a></span
+              >Я погоджуюся з
+              <a href="" class="agreement">Умовами конфіденційності</a></span
             >
           </label>
-          <button type="submit" class="button-modal">Відправити</button>
+          <button type="submit" class="button button-modal">Відправити</button>
         </form>
       </div>
     </div>

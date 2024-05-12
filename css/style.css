@@ -243,8 +243,8 @@ img {
     left: 50%;
     padding: 40px;
 
-    min-width: 350px;
-    min-height: 450px;
+    min-width: 520px;
+    min-height: 500px;
 
     background-color: var(--second-color);
     border-radius: 10px;
@@ -278,26 +278,63 @@ img {
 .modal-title {
     margin-bottom: 20px;
     display: block;
+    text-align: center;
 }
 
 .modal-label {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     display: block;
 }
 
-
 .modal-input {
-    padding: 10px 35px;
+    /* padding: 10px 35px; */
+    height: 40px;
     width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
 
+    border-radius: 10px;
     border: 1px solid rgb(118, 118, 118);
+    outline: 1px solid transparent;
 
-    transition: border 500ms linear;
+    transition: outline 250ms linear, box-shadow 250ms linear;
 }
 
 .modal-input:focus {
-    border-color: var(--color-focus);
+    outline-color: var(--color-focus);
+    outline-offset: -1px;
+    box-shadow: 0 0 0 4px rgba(255, 108, 0, 0.25);
+}
+
+/* ПЕРЕВІРКА ВАЛІДНОСТІ (МОДАЛЬНЕ ВІКНО- ІНПУТ) */
+.svg-success,
+.svg-warning {
+    fill: transparent;
+    transform: scale(0.3);
+    transform-origin: center;
+
+    transition: fill 250ms linear, transform 250ms linear;
+}
+
+.modal-input:not(:placeholder-shown):required:valid {
+    outline-color: rgb(47, 219, 47);
+    box-shadow: 0 0 0 4px rgba(0, 128, 0, 0.5);
+}
+
+.modal-input:not(:placeholder-shown):required:valid~.modal-alert>.svg-success {
+    fill: rgb(47, 219, 47);
+    transform: scale(1);
+}
+
+.modal-input:not(:placeholder-shown):required:invalid {
+    outline-color: rgb(184, 57, 57);
+    box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5);
+}
+
+.modal-input:not(:placeholder-shown):required:invalid~.modal-alert>.svg-warning {
+    fill: rgb(184, 57, 57);
+    transform: scale(1);
 }
 
 .modal-span {
@@ -308,12 +345,12 @@ img {
     transform: translateY(-50%);
 
     color: rgb(0, 0, 0);
-    transition: transform 500ms linear, color 500ms linear;
+    transition: transform 250ms linear, color 250ms linear;
 }
 
 .modal-input:focus+.modal-span,
 .modal-input:not(:placeholder-shown)+.modal-span {
-    transform: translate(-40px, -40px);
+    transform: translate(-40px, -45px);
     color: var(--color-focus);
 }
 
@@ -327,11 +364,27 @@ img {
     fill: #212121;
     transform: translateY(-50%);
 
-    transition: fill 500ms linear;
+    transition: fill 250ms linear;
 }
 
-.modal-input:focus~.icon-modal {
+.modal-alert {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    fill: #212121;
+    transform: translateY(-50%);
+
+    transition: fill 250ms linear;
+}
+
+.modal-input:focus~.icon-modal,
+.modal-input:focus~.modal-alert {
     fill: var(--color-focus);
+}
+
+.modal-input:not(:placeholder-shown)~.icon-modal {
+    fill: inherit;
 }
 
 .modal-textarea {
@@ -340,23 +393,27 @@ img {
     width: 100%;
 
     resize: none;
+    border-radius: 10px;
     border: 1px solid rgb(118, 118, 118);
+    outline: 1px solid transparent;
 
-    transition: border 500ms linear;
+    transition: outline 250ms linear, box-shadow 250ms linear;
 }
 
 .modal-textarea:focus {
-    border-color: var(--color-focus)
+    outline-color: var(--color-focus);
+    outline-offset: -1px;
+    box-shadow: 0 0 0 4px rgba(255, 108, 0, 0.25);
 }
 
 .modal-comment {
     position: absolute;
-    top: -19px;
+    top: -22px;
     left: 0;
 
     color: var(--main-color);
 
-    transition: color 500ms linear;
+    transition: color 250ms linear;
 }
 
 .modal-textarea:focus+.modal-comment {
@@ -364,18 +421,53 @@ img {
 }
 
 .checkbox {
+    -webkit-appearance: none;
     appearance: none;
-    -moz-appearance: none;
-    position: absolute;
 
-    width: auto;
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid var(--auxiliary-color);
+    border-radius: 5px;
+    background-size: 0;
+
+    transition: all 250ms linear;
+}
+
+.checkbox:checked {
+    background-image: url("../images/full-check.svg");
+
+    background-origin: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    border-color: var(--color-focus);
+    background-color: var(--color-focus);
+
+}
+
+.modal-label.policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .text-policy {
-    display: flex;
+    user-select: none;
 }
 
-.text-policy::before {
+.policy .agreement {
+    color: var(--color-focus);
+}
+
+.button.button-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .text-policy::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -383,15 +475,18 @@ img {
 
     border-radius: 5px;
     border: 1px solid var(--main-color);
-}
+} */
 
-.checkbox:checked+.text-policy::before {
+/* .checkbox:checked+.text-policy::before {
     background-image: url("../full-check.svg");
     background-size: contain;
     border-color: green;
     background-color: green;
     background-origin: border-box;
-}
+} */
+
+
+
 
 /* HERO STYLES */
 .hero .container {
@@ -534,7 +629,8 @@ img {
     color: var(--text-color);
 }
 
-.about-button {
+.about-button,
+.button-modal {
     color: var(--main-color);
 
     transition:
@@ -543,7 +639,9 @@ img {
 }
 
 .about-button:hover,
-.about-button:focus {
+.about-button:focus,
+.button-modal:hover,
+.button-modal:focus {
     color: var(--second-color);
     background-color: var(--color-focus);
 }
