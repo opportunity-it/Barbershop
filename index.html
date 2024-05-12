@@ -498,12 +498,44 @@
           <!-- booking-->
           <section class="booking">
             <h2 class="booking-title title">Online-booking</h2>
-
-            <!-- <label for="name" class="label-name">Name+</label> -->
-            <input type="text" name="name" id="name" class="input-name" />
-
-            <!-- <label for="tel">Phone+</label> -->
-            <input type="tel" name="tel" id="tel" class="input-tel" />
+            <form class="booking-form" name="booking_form">
+              <div class="booking-group">
+                <div class="input-label">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    minlength="4"
+                    placeholder="Андрій Андрійович"
+                    class="input-name"
+                    required
+                  />
+                  <label for="name" class="label-name">Name*</label>
+                </div>
+                <div class="input-label">
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="38 000 000 00 00"
+                    class="input-name"
+                    required
+                  />
+                  <label for="tel" class="label-name">Phone*</label>
+                </div>
+              </div>
+              <div class="booking-textarea">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="3"
+                  class="textarea-message"
+                  placeholder="Введіть коментар"
+                ></textarea>
+                <label for="message" class="label-message">Message</label>
+              </div>
+              <button type="submit" class="button button-form">Send</button>
+            </form>
           </section>
           <!-- contacts -->
           <section id="contacts" class="contacts">
@@ -577,12 +609,78 @@
     </footer>
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <p></p>
         <button class="button-close" data-close-modal>
           <svg class="close-modal" width="18" height="18">
             <use href="./images/sprite.svg#close-modal"></use>
           </svg>
         </button>
+        <form class="form-modal" name="form_modal">
+          <strong
+            id="means-for-communication-with-the-client"
+            class="modal-title"
+            >Залиште ваші контакти і ми вам зателефонуємо</strong
+          >
+          <div
+            role="group"
+            aria-labelledby="means-for-communication-with-the-client"
+          >
+            <label class="modal-label">
+              <input
+                type="text"
+                name="name"
+                class="modal-input"
+                placeholder="&nbsp;"
+              />
+              <span class="modal-span">Ім'я</span>
+              <svg class="icon-modal">
+                <use href="./images/sprite.svg#person"></use>
+              </svg>
+            </label>
+            <label class="modal-label">
+              <input
+                type="tel"
+                name="tel"
+                class="modal-input"
+                placeholder=""
+                minlength="12"
+                maxlength="12"
+                aria-placeholder="&nbsp;"
+              />
+              <span class="modal-span">Телефон</span>
+              <svg class="icon-modal">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+            </label>
+            <label class="modal-label">
+              <input
+                type="email"
+                name="mail"
+                class="modal-input"
+                placeholder="&nbsp;"
+              />
+              <span class="modal-span">Імейл</span>
+              <svg class="icon-modal">
+                <use href="./images/sprite.svg#email"></use>
+              </svg>
+            </label>
+            <label class="modal-label">
+              <textarea
+                name=""
+                rows="10"
+                placeholder="Введіть коментар..."
+                class="modal-textarea"
+              ></textarea>
+              <span class="modal-comment">Коментар</span>
+            </label>
+          </div>
+          <label class="modal-label policy">
+            <input type="checkbox" name="policy" class="checkbox" />
+            <span class="text-policy"
+              >Я погоджуюся з <a href="">Умовами конфіденційності</a></span
+            >
+          </label>
+          <button type="submit" class="button-modal">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
