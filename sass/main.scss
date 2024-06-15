@@ -1,0 +1,30 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixin";
+
+// BASE
+@import "./base/basic-styles";
+@import "./utils/placeholder";
+@import "./base/normalize";
+
+// COMPONENTS
+@import "./components/container";
+@import "./components/titles";
+@import "./components/button";
+@import "./components/barbers-social-icons";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/services";
+@import "./layout/benefits";
+@import "./layout/barbers";
+@import "./layout/gallery";
+@import "./layout/booking-contacts";
+@import "./layout/booking";
+@import "./layout/contacts";
+@import "./layout/footer";
+@import "./components/modal-window";
+@import "./layout/change-validate-modal-window";

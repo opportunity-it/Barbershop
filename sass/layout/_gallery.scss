@@ -1,0 +1,18 @@
+.gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.subtitle--margin-bot {
+    margin-bottom: 44px;
+}
+
+.gallery-list {
+    @extend %list;
+    // display: flex;
+    @include displayed();
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}

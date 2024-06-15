@@ -1,803 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barbershop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <!-- header -->
-    <header class="header">
-      <div class="container header__container">
-        <nav class="header__nav">
-          <a href="./index.html" class="logo">
-            <svg class="logo__img">
-              <use href="./images/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="list header-list">
-            <li class="header-list__item">
-              <a
-                class="header-list__link header-list__link--current"
-                href="#about"
-                >About</a
-              >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbershop-SASS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <a href="./index.html" class="logo">
+          <svg class="logo__img">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="header-list">
+          <li class="header-list__item">
+            <a class="header-list__link header-list__link--current" href="#about">About</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link header-list__link--current" href="#services">Services and prices</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link header-list__link--current" href="#barbers">Barbers</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link header-list__link--current" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="tel-button">
+        <a href="tel:+380441111111" class="tel-button__tel tel-button__tel--current">+38 044 111 11 11</a>
+        <button type="button" class="button button--header-transition animate__animated animate__heartBeat"
+          data-open-modal>
+          Online-booking
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="social-wrapper">
+          <ul class="social-list social-list--transform">
+            <li>
+              <a class="social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
             </li>
-            <li class="header-list__item">
-              <a
-                class="header-list__link header-list__link--current"
-                href="#services"
-                >Services and prices</a
-              >
-            </li>
-            <li class="header-list__item">
-              <a
-                class="header-list__link header-list__link--current"
-                href="#barbers"
-                >Barbers</a
-              >
-            </li>
-            <li class="header-list__item">
-              <a
-                class="header-list__link header-list__link--current"
-                href="#contacts"
-                >Contacts</a
-              >
+            <li>
+              <a class="social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
             </li>
           </ul>
-        </nav>
-        <div class="tel-button">
-          <a
-            href="tel:+380441111111"
-            class="tel-button__tel tel-button__tel--current"
-            >+38 044 111 11 11</a
-          >
-          <button
-            type="button"
-            class="button tel-button__button animate__animated animate__heartBeat"
-            data-open-modal
-          >
+        </div>
+        <div class="hero-description">
+          <p class="subtitle subtitle--color subtitle--bg-color">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="hero-title animate__animated animate__bounce">
+            BarberShop
+          </h1>
+          <p class="hero-text animate__animated animate__flipInY">
+            We are experts in trendy men’s haircuts. We work quickly,
+            carefully and with style.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="container about__container">
+        <img class="about-img" src="./images/about-img-1-opt.jpg" alt="exercise haircut" width="270" />
+        <img class="about-img" src="./images/about-img-2-opt.jpg" alt="exercise haircut" width="270" />
+        <div class="about-wrapper">
+          <p class="subtitle">About</p>
+          <h2 class="title title--margin">Best Barbershop in your city</h2>
+          <p class="about-wrapper__text-visit">
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+          </p>
+          <p class="about-wrapper__about-text">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our
+            master, you will never be the same again. We are a team that is
+            always "on the same wave" with clients. Therefore, we are always
+            ready to improve everyone who comes to us!
+          </p>
+          <button type="button" class="button about-wrapper__button" data-open-modal>
             Online-booking
           </button>
         </div>
       </div>
-    </header>
-    <!-- hero -->
-    <main>
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="social-wrapper">
-            <ul class="list social-list social-list--transform">
-              <li>
-                <a
-                  class="social-list__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  class="social-list__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Youtube</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="hero-description">
-            <p class="subtitle subtitle--color subtitle--bg-color">
-              A hair salon for men in Kyiv
-            </p>
-            <h1 class="hero-title animate__animated animate__bounce">
-              BarberShop
-            </h1>
-            <p class="hero-text animate__animated animate__flipInY">
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- about -->
-      <section class="about" id="about">
-        <div class="container about__container">
-          <img
-            class="about-img"
-            src="./images/about-img-1-opt.jpg"
-            alt="exercise haircut"
-            width="270"
-          />
-          <img
-            class="about-img"
-            src="./images/about-img-2-opt.jpg"
-            alt="exercise haircut"
-            width="270"
-          />
-          <div class="about-wrapper">
-            <p class="subtitle">About</p>
-            <h2 class="title title--margin">Best Barbershop in your city</h2>
-            <p class="about-wrapper__text-visit">
-              If you want to add more confidence to your image, you should
-              definitely visit us.
-            </p>
-            <p class="about-wrapper__about-text">
-              We are a team that never stops at what has been achieved and are
-              thirsty for changes. And when you fall into the hands of our
-              master, you will never be the same again. We are a team that is
-              always "on the same wave" with clients. Therefore, we are always
-              ready to improve everyone who comes to us!
-            </p>
-            <button
-              type="button"
-              class="button about-wrapper__button"
-              data-open-modal
-            >
-              Online-booking
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- services and prices -->
-      <section id="services" class="services">
-        <div class="container">
-          <p class="subtitle subtitle--color subtitle--bg-color">
-            Spend your time with the best masters
-          </p>
-          <h2 class="title title--light-color">Services and prices</h2>
-          <div class="our-price">
-            <ul class="list services-list services-list--first">
-              <li class="services-list__item">
-                <p class="services-list__text">Men’s haircut</p>
-                <p class="services-list__text">from 300 uah.</p>
-              </li>
-              <li class="services-list__item">
-                <p class="services-list__text">Beard trim</p>
-                <p class="services-list__text">from 300 uah.</p>
-              </li>
-              <li class="services-list__item">
-                <p class="services-list__text">Mustache trim</p>
-                <p class="services-list__text">from 200 uah.</p>
-              </li>
-              <li class="services-list__item">
-                <p class="services-list__text">Straight razor shave</p>
-                <p class="services-list__text">from 200 uah.</p>
-              </li>
-            </ul>
-            <ul class="list services-list services-list--second">
-              <li class="services-list__item">
-                <p class="services-list__text services-list__text--color">
-                  Trainee’s haircut
-                </p>
-                <p class="services-list__text services-list__text--color">
-                  from 50 uah.
-                </p>
-              </li>
-              <li class="services-list__item">
-                <p class="services-list__text services-list__text--color">
-                  Haircut under the nozzle
-                </p>
-                <p class="services-list__text services-list__text--color">
-                  from 200 uah.
-                </p>
-              </li>
-              <li class="services-list__item">
-                <p class="services-list__text services-list__text--color">
-                  Children’s haircut (0-12 y.o.)
-                </p>
-                <p class="services-list__text services-list__text--color">
-                  from 300 uah.
-                </p>
-              </li>
-              <li class="services-list__item">
-                <p class="services-list__text services-list__text--color">
-                  Camouflage of gray hair
-                </p>
-                <p class="services-list__text services-list__text--color">
-                  from 200 uah.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <button
-            type="button"
-            class="button button--services-button"
-            data-open-modal
-          >
-            Online-booking
-          </button>
-        </div>
-      </section>
-      <!-- benefits -->
-      <section class="benefits">
-        <div class="container benefits__container">
-          <ul class="list benefits-list">
-            <li class="benefits-list__item">
-              <div class="wrapper-amount">
-                <span class="wrapper-amount__amount">600</span
-                ><sup class="wrapper-amount__plus">+</sup>
-              </div>
-              <p class="wrapper-amount__text">Satisfied customers per day</p>
+    </section>
+    <!-- services and prices -->
+    <section id="services" class="services">
+      <div class="container">
+        <p class="subtitle subtitle--color subtitle--bg-color">
+          Spend your time with the best masters
+        </p>
+        <h2 class="title title--light-color">Services and prices</h2>
+        <div class="our-price">
+          <ul class="services-list services-list--first">
+            <li class="services-list__item">
+              <p class="services-list__text">Men’s haircut</p>
+              <p class="services-list__text">from 300 uah.</p>
             </li>
-            <li class="benefits-list__item">
-              <div class="wrapper-amount">
-                <span class="wrapper-amount__amount">50</span
-                ><sup class="wrapper-amount__plus">+</sup>
-              </div>
-              <p class="wrapper-amount__text">Awards for excellent service</p>
+            <li class="services-list__item">
+              <p class="services-list__text">Beard trim</p>
+              <p class="services-list__text">from 300 uah.</p>
             </li>
-            <li class="benefits-list__item">
-              <div class="wrapper-amount">
-                <span class="wrapper-amount__amount">20</span
-                ><sup class="wrapper-amount__plus">+</sup>
-              </div>
-              <p class="wrapper-amount__text">Kyiv’s best barbers</p>
+            <li class="services-list__item">
+              <p class="services-list__text">Mustache trim</p>
+              <p class="services-list__text">from 200 uah.</p>
             </li>
-            <li class="benefits-list__item">
-              <div class="wrapper-amount">
-                <span class="wrapper-amount__amount">100</span
-                ><sup class="wrapper-amount__plus">+</sup>
-              </div>
-              <p class="wrapper-amount__text">Gifts for regular customers</p>
+            <li class="services-list__item">
+              <p class="services-list__text">Straight razor shave</p>
+              <p class="services-list__text">from 200 uah.</p>
             </li>
           </ul>
-          <div class="benefits-description">
-            <p class="subtitle">Old traditional school</p>
-            <h2 class="title title--margin">¿Why people come to us?</h2>
-            <p class="benefits-description__after-title">
-              Only good things are said about us. But it's better to see and
-              feel 1 time than read 10 times.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- barbers -->
-      <section id="barbers" class="barbers">
-        <div class="container">
-          <p class="subtitle">For true enjoyers of the atmosphere</p>
-          <h2 class="title">Our barbers</h2>
-          <ul class="list barbers-list">
-            <li class="barbers-list__item">
-              <div class="description-img">
-                <img
-                  src="./images/john-smith-opt.jpg"
-                  alt="John Smith"
-                  width="370"
-                />
-                <div class="wrapper-text">
-                  <p class="wrapper-text__barbers-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas vitae esse delectus, ex dolore voluptatem recusandae
-                    soluta architecto maxime velit deserunt sequi ipsum
-                    doloremque quisquam, nulla reprehenderit numquam. Iusto
-                    aspernatur esse hic a asperiores ea beatae, voluptas, ex
-                    laboriosam molestiae repudiandae explicabo alias officia?
-                    Deserunt quas qui accusantium fugit nesciunt!
-                  </p>
-                </div>
-              </div>
-              <h3 class="barbers-name">John Smith</h3>
-              <p class="barbers-list__job">Extreme Barber</p>
-              <ul class="list social-icons">
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на інстаграм"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на твіттер"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на фейсбук"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на лінкедин"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+          <ul class="services-list services-list--second">
+            <li class="services-list__item">
+              <p class="services-list__text services-list__text--color">
+                Trainee’s haircut
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 50 uah.
+              </p>
             </li>
-            <li class="barbers-list__item">
-              <div class="description-img">
-                <img
-                  src="./images/michele-doe-opt.jpg"
-                  alt="Michele Doe"
-                  width="370"
-                />
-                <div class="wrapper-text">
-                  <p class="wrapper-text__barbers-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas vitae esse delectus, ex dolore voluptatem recusandae
-                    soluta architecto maxime velit deserunt sequi ipsum
-                    doloremque quisquam, nulla reprehenderit numquam. Iusto
-                    aspernatur esse hic a asperiores ea beatae, voluptas, ex
-                    laboriosam molestiae repudiandae explicabo alias officia?
-                    Deserunt quas qui accusantium fugit nesciunt!
-                  </p>
-                </div>
-              </div>
-              <h3 class="barbers-name">Michele Doe</h3>
-              <p class="barbers-list__job">Extreme Barber</p>
-              <ul class="list social-icons">
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на інстаграм"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на твіттер"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на фейсбук"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на лінкедин"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <li class="services-list__item">
+              <p class="services-list__text services-list__text--color">
+                Haircut under the nozzle
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 200 uah.
+              </p>
             </li>
-            <li class="barbers-list__item">
-              <div class="description-img">
-                <img
-                  src="./images/alan-black-opt.jpg"
-                  alt="Alan Black"
-                  width="370"
-                />
-                <div class="wrapper-text">
-                  <p class="wrapper-text__barbers-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas vitae esse delectus, ex dolore voluptatem recusandae
-                    soluta architecto maxime velit deserunt sequi ipsum
-                    doloremque quisquam, nulla reprehenderit numquam. Iusto
-                    aspernatur esse hic a asperiores ea beatae, voluptas, ex
-                    laboriosam molestiae repudiandae explicabo alias officia?
-                    Deserunt quas qui accusantium fugit nesciunt!
-                  </p>
-                </div>
-              </div>
-              <h3 class="barbers-name">Alan Black</h3>
-              <p class="barbers-list__job">Extreme Barber</p>
-              <ul class="list social-icons">
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на інстаграм"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на твіттер"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на фейсбук"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons__item">
-                  <a
-                    href=""
-                    class="social-icons__link"
-                    aria-label="Посилання на лінкедин"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="social-icons__icon" width="20px" height="20px">
-                      <use href="./images/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <li class="services-list__item">
+              <p class="services-list__text services-list__text--color">
+                Children’s haircut (0-12 y.o.)
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 300 uah.
+              </p>
+            </li>
+            <li class="services-list__item">
+              <p class="services-list__text services-list__text--color">
+                Camouflage of gray hair
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 200 uah.
+              </p>
             </li>
           </ul>
         </div>
-      </section>
-      <!--gallery "barba" means "beard" -->
-      <section class="gallery">
-        <div class="container">
-          <p class="subtitle subtitle--margin-bot">
-            In Latin, "barba" means "beard"
-          </p>
-          <h2 class="visually-hidden">Our barbers</h2>
-          <ul class="list gallery-list">
-            <li class="gallery-list__item">
-              <img
-                src="./images/types-of-haircuts-junior.jpg"
-                alt="junior barber"
-                width="270"
-              />
-            </li>
-            <li class="gallery-list__item">
-              <img
-                src="./images/types-of-haircuts-middle.jpg"
-                alt="middle barber"
-                width="270"
-              />
-            </li>
-            <li class="gallery-list__item">
-              <img
-                src="./images/types-of-haircuts-with-bread.jpg"
-                alt="barber with beard"
-                width="270"
-              />
-            </li>
-            <li class="gallery-list__item">
-              <img
-                src="./images/types-of-haircuts-tattoo.jpg"
-                alt="tattoo barber"
-                width="270"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="booking-contacts">
-        <div class="container container--book-cont-display">
-          <!-- booking-->
-          <section class="booking">
-            <h2 class="title title--light-color">Online-booking</h2>
-            <form class="booking-form" name="booking_form">
-              <div class="booking-group">
-                <div class="booking-group__input-label">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    minlength="4"
-                    placeholder="Андрій Андрійович"
-                    class="booking-group__input-name"
-                    required
-                  />
-                  <label for="name" class="booking-group__label-name"
-                    >Name*</label
-                  >
-                </div>
-                <div class="booking-group__input-label">
-                  <input
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    placeholder="38 000 000 00 00"
-                    class="booking-group__input-name"
-                    required
-                  />
-                  <label for="tel" class="booking-group__label-name"
-                    >Phone*</label
-                  >
-                </div>
-              </div>
-              <div class="booking-textarea">
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="3"
-                  class="booking-textarea__textarea-message"
-                  placeholder="Введіть коментар"
-                ></textarea>
-                <label for="message" class="booking-textarea__label-message"
-                  >Message</label
-                >
-              </div>
-              <button type="submit" class="button booking-form__button">
-                Send
-              </button>
-            </form>
-          </section>
-          <!-- contacts -->
-          <section id="contacts" class="contacts">
-            <h2 class="title title--light-color title--individual-margin">
-              Contacts
-            </h2>
-            <address>
-              <ul class="list contacts-list">
-                <li class="contacts-list_item-map">
-                  <a
-                    class="contacts-list__link contacts-list__link--font-weight"
-                    href="https://maps.app.goo.gl/K78xXRxyZLYF9gL68"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                  >
-                    <svg class="contacts-list__icon">
-                      <use href="./images/sprite.svg#map-pin"></use>
-                    </svg>
-                    st. Vasilkovaya, 7A Kiev, 08132</a
-                  >
-                </li>
-                <li class="contacts-list__item-tel">
-                  <a class="contacts-list__link" href="tel:+380441111111">
-                    <svg class="contacts-list__icon">
-                      <use href="./images/sprite.svg#phone"></use>
-                    </svg>
-                    +38 044 111 11 11</a
-                  >
-                </li>
-                <li class="contacts-list__item-mail">
-                  <a
-                    class="contacts-list__link contacts-list__link--text-decor"
-                    href="mailto:barbershop@email.com"
-                  >
-                    <svg class="contacts-list__icon">
-                      <use href="./images/sprite.svg#mail"></use>
-                    </svg>
-                    barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <p class="subtitle subtitle--light-color subtitle--bg-color">
-              Working hours
-            </p>
-            <p class="day-time">Every day from 9:00 to 22:00</p>
-          </section>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container footer__container">
-        <p class="footer-text">&copy; Copyright 2020</p>
-        <ul class="list social-list">
-          <li>
-            <a
-              class="social-list__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
+        <button type="button" class="button button--services-button" data-open-modal>
+          Online-booking
+        </button>
+      </div>
+    </section>
+    <!-- benefits -->
+    <section class="benefits">
+      <div class="container benefits__container">
+        <ul class="benefits-list">
+          <li class="benefits-list__item">
+            <div class="wrapper-amount">
+              <span class="wrapper-amount__amount">600</span><sup class="wrapper-amount__plus">+</sup>
+            </div>
+            <p class="wrapper-amount__text">Satisfied customers per day</p>
           </li>
-          <li>
-            <a
-              class="social-list__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Youtube</a
-            >
+          <li class="benefits-list__item">
+            <div class="wrapper-amount">
+              <span class="wrapper-amount__amount">50</span><sup class="wrapper-amount__plus">+</sup>
+            </div>
+            <p class="wrapper-amount__text">Awards for excellent service</p>
+          </li>
+          <li class="benefits-list__item">
+            <div class="wrapper-amount">
+              <span class="wrapper-amount__amount">20</span><sup class="wrapper-amount__plus">+</sup>
+            </div>
+            <p class="wrapper-amount__text">Kyiv’s best barbers</p>
+          </li>
+          <li class="benefits-list__item">
+            <div class="wrapper-amount">
+              <span class="wrapper-amount__amount">100</span><sup class="wrapper-amount__plus">+</sup>
+            </div>
+            <p class="wrapper-amount__text">Gifts for regular customers</p>
+          </li>
+        </ul>
+        <div class="benefits-description">
+          <p class="subtitle">Old traditional school</p>
+          <h2 class="title title--margin">¿Why people come to us?</h2>
+          <p class="benefits-description__after-title">
+            Only good things are said about us. But it's better to see and
+            feel 1 time than read 10 times.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- barbers -->
+    <section id="barbers" class="barbers">
+      <div class="container">
+        <p class="subtitle">For true enjoyers of the atmosphere</p>
+        <h2 class="title">Our barbers</h2>
+        <ul class="barbers-list">
+          <li class="barbers-list__item">
+            <div class="description-img">
+              <img src="./images/john-smith-opt.jpg" alt="John Smith" width="370" />
+              <div class="wrapper-text">
+                <p class="wrapper-text__barbers-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quas vitae esse delectus, ex dolore voluptatem recusandae
+                  soluta architecto maxime velit deserunt sequi ipsum
+                  doloremque quisquam, nulla reprehenderit numquam. Iusto
+                  aspernatur esse hic a asperiores ea beatae, voluptas, ex
+                  laboriosam molestiae repudiandae explicabo alias officia?
+                  Deserunt quas qui accusantium fugit nesciunt!
+                </p>
+              </div>
+            </div>
+            <h3 class="barbers-name">John Smith</h3>
+            <p class="barbers-list__job">Extreme Barber</p>
+            <ul class="social-icons">
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на інстаграм" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на твіттер" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на фейсбук" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на лінкедин" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="barbers-list__item">
+            <div class="description-img">
+              <img src="./images/michele-doe-opt.jpg" alt="Michele Doe" width="370" />
+              <div class="wrapper-text">
+                <p class="wrapper-text__barbers-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quas vitae esse delectus, ex dolore voluptatem recusandae
+                  soluta architecto maxime velit deserunt sequi ipsum
+                  doloremque quisquam, nulla reprehenderit numquam. Iusto
+                  aspernatur esse hic a asperiores ea beatae, voluptas, ex
+                  laboriosam molestiae repudiandae explicabo alias officia?
+                  Deserunt quas qui accusantium fugit nesciunt!
+                </p>
+              </div>
+            </div>
+            <h3 class="barbers-name">Michele Doe</h3>
+            <p class="barbers-list__job">Extreme Barber</p>
+            <ul class="social-icons">
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на інстаграм" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на твіттер" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на фейсбук" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на лінкедин" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="barbers-list__item">
+            <div class="description-img">
+              <img src="./images/alan-black-opt.jpg" alt="Alan Black" width="370" />
+              <div class="wrapper-text">
+                <p class="wrapper-text__barbers-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quas vitae esse delectus, ex dolore voluptatem recusandae
+                  soluta architecto maxime velit deserunt sequi ipsum
+                  doloremque quisquam, nulla reprehenderit numquam. Iusto
+                  aspernatur esse hic a asperiores ea beatae, voluptas, ex
+                  laboriosam molestiae repudiandae explicabo alias officia?
+                  Deserunt quas qui accusantium fugit nesciunt!
+                </p>
+              </div>
+            </div>
+            <h3 class="barbers-name">Alan Black</h3>
+            <p class="barbers-list__job">Extreme Barber</p>
+            <ul class="social-icons">
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на інстаграм" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на твіттер" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на фейсбук" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link" aria-label="Посилання на лінкедин" target="_blank"
+                  rel="noopener nofollow noreferrer">
+                  <svg class="social-icons__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
-    </footer>
-    <!-- MODAL WINDOW -->
-    <div class="backdrop is-hidden" data-backdrop>
-      <div class="backdrop__modal">
-        <button class="button-close" data-close-modal>
-          <svg width="18" height="18">
-            <use href="./images/sprite.svg#close-modal"></use>
-          </svg>
-        </button>
-        <form class="form-modal" name="form_modal">
-          <strong
-            id="means-for-communication-with-the-client"
-            class="form-modal__modal-title"
-            >Залиште ваші контакти і ми вам зателефонуємо</strong
-          >
-          <div
-            role="group"
-            aria-labelledby="means-for-communication-with-the-client"
-          >
-            <label class="modal-label">
-              <input
-                type="text"
-                name="name"
-                class="modal-label__input"
-                placeholder="&nbsp;"
-                required
-                minlength="3"
-              />
-              <span class="modal-label__span">Ім'я</span>
-              <svg class="icon-modal">
-                <use href="./images/sprite.svg#person"></use>
-              </svg>
-              <svg class="modal-alert" width="20" height="20">
-                <use
-                  class="modal-alert__success"
-                  href="./images/sprite.svg#success"
-                ></use>
-                <use
-                  class="modal-alert__warning"
-                  href="./images/sprite.svg#warning"
-                ></use>
-              </svg>
-            </label>
-            <label class="modal-label">
-              <input
-                type="tel"
-                name="tel"
-                class="modal-label__input"
-                placeholder="&nbsp;"
-                required
-                minlength="12"
-                maxlength="12"
-              />
-              <span class="modal-label__span">Телефон</span>
-              <svg class="icon-modal">
-                <use href="./images/sprite.svg#phone"></use>
-              </svg>
-              <svg class="modal-alert" width="20" height="20">
-                <use
-                  class="modal-alert__success"
-                  href="./images/sprite.svg#success"
-                ></use>
-                <use
-                  class="modal-alert__warning"
-                  href="./images/sprite.svg#warning"
-                ></use>
-              </svg>
-            </label>
-            <label class="modal-label">
-              <input
-                type="email"
-                name="mail"
-                class="modal-label__input"
-                placeholder="&nbsp;"
-                required
-              />
-              <span class="modal-label__span">Імейл</span>
-              <svg class="icon-modal">
-                <use href="./images/sprite.svg#email"></use>
-              </svg>
-              <svg class="modal-alert" width="20" height="20">
-                <use
-                  class="modal-alert__success"
-                  href="./images/sprite.svg#success"
-                ></use>
-                <use
-                  class="modal-alert__warning"
-                  href="./images/sprite.svg#warning"
-                ></use>
-              </svg>
-            </label>
-            <label class="modal-label">
-              <textarea
-                name=""
-                rows="10"
-                placeholder="Введіть коментар..."
-                class="modal-label__textarea"
-              ></textarea>
-              <span class="modal-label__comment">Коментар</span>
-            </label>
-          </div>
-          <label class="modal-check modal-check--policy">
-            <input
-              type="checkbox"
-              name="policy"
-              class="modal-check__checkbox"
-            />
-            <span class="modal-check__text-policy"
-              >Я погоджуюся з
-              <a href="" class="modal-check__agreement"
-                >Умовами конфіденційності</a
-              ></span
-            >
-          </label>
-          <button type="submit" class="button form-modal__button">
-            Відправити
-          </button>
-        </form>
+    </section>
+    <!--gallery "barba" means "beard" -->
+    <section class="gallery">
+      <div class="container">
+        <p class="subtitle subtitle--margin-bot">
+          In Latin, "barba" means "beard"
+        </p>
+        <h2 class="visually-hidden">Our barbers</h2>
+        <ul class="gallery-list">
+          <li class="gallery-list__item">
+            <img src="./images/types-of-haircuts-junior.jpg" alt="junior barber" width="270" />
+          </li>
+          <li class="gallery-list__item">
+            <img src="./images/types-of-haircuts-middle.jpg" alt="middle barber" width="270" />
+          </li>
+          <li class="gallery-list__item">
+            <img src="./images/types-of-haircuts-with-bread.jpg" alt="barber with beard" width="270" />
+          </li>
+          <li class="gallery-list__item">
+            <img src="./images/types-of-haircuts-tattoo.jpg" alt="tattoo barber" width="270" />
+          </li>
+        </ul>
       </div>
+    </section>
+    <section class="booking-contacts">
+      <div class="container container--book-cont-display">
+        <!-- booking-->
+        <section class="booking">
+          <h2 class="title title--light-color">Online-booking</h2>
+          <form class="booking-form" name="booking_form">
+            <div class="booking-group">
+              <div class="booking-group__input-label">
+                <input type="text" name="name" id="name" minlength="4" placeholder="Андрій Андрійович"
+                  class="booking-group__input-name" required />
+                <label for="name" class="booking-group__label-name">Name*</label>
+              </div>
+              <div class="booking-group__input-label">
+                <input type="tel" name="tel" id="tel" placeholder="38 000 000 00 00" class="booking-group__input-name"
+                  required />
+                <label for="tel" class="booking-group__label-name">Phone*</label>
+              </div>
+            </div>
+            <div class="booking-textarea">
+              <textarea name="message" id="message" rows="3" class="booking-textarea__textarea-message"
+                placeholder="Введіть коментар"></textarea>
+              <label for="message" class="booking-textarea__label-message">Message</label>
+            </div>
+            <button type="submit" class="button button--booking-transition">
+              Send
+            </button>
+          </form>
+        </section>
+        <!-- contacts -->
+        <section id="contacts" class="contacts">
+          <h2 class="title title--light-color title--individual-margin">
+            Contacts
+          </h2>
+          <address>
+            <ul class="contacts-list">
+              <li class="contacts-list_item-map">
+                <a class="contacts-list__link contacts-list__link--font-weight"
+                  href="https://maps.app.goo.gl/K78xXRxyZLYF9gL68" target="_blank" rel="noopener noreferrer nofollow">
+                  <svg class="contacts-list__icon">
+                    <use href="./images/sprite.svg#map-pin"></use>
+                  </svg>
+                  st. Vasilkovaya, 7A Kiev, 08132</a>
+              </li>
+              <li class="contacts-list__item-tel">
+                <a class="contacts-list__link" href="tel:+380441111111">
+                  <svg class="contacts-list__icon">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a>
+              </li>
+              <li class="contacts-list__item-mail">
+                <a class="contacts-list__link contacts-list__link--text-decor" href="mailto:barbershop@email.com">
+                  <svg class="contacts-list__icon">
+                    <use href="./images/sprite.svg#mail"></use>
+                  </svg>
+                  barbershop@email.com</a>
+              </li>
+            </ul>
+          </address>
+          <p class="subtitle subtitle--light-color subtitle--bg-color">
+            Working hours
+          </p>
+          <p class="day-time">Every day from 9:00 to 22:00</p>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer-text">&copy; Copyright 2020</p>
+      <ul class="social-list">
+        <li>
+          <a class="social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+        </li>
+        <li>
+          <a class="social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
+        </li>
+      </ul>
     </div>
-    <script src="./js/modal.js"></script>
-    <!-- <script>
+  </footer>
+  <!-- MODAL WINDOW -->
+  <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop__modal">
+      <button class="button-close" data-close-modal>
+        <svg class="icon-close" width="18" height="18">
+          <use href="./images/sprite.svg#close-modal"></use>
+        </svg>
+      </button>
+      <form class="form-modal" name="form_modal">
+        <strong id="means-for-communication-with-the-client" class="form-modal__modal-title">Залиште ваші контакти і ми
+          вам зателефонуємо</strong>
+        <div role="group" aria-labelledby="means-for-communication-with-the-client">
+          <label class="modal-label">
+            <input type="text" name="name" class="modal-label__input" placeholder="&nbsp;" required minlength="3" />
+            <span class="modal-label__span">Ім'я</span>
+            <svg class="icon-modal">
+              <use href="./images/sprite.svg#person"></use>
+            </svg>
+            <svg class="modal-alert" width="20" height="20">
+              <use class="modal-alert__success" href="./images/sprite.svg#success"></use>
+              <use class="modal-alert__warning" href="./images/sprite.svg#warning"></use>
+            </svg>
+          </label>
+          <label class="modal-label">
+            <input type="tel" name="tel" class="modal-label__input" placeholder="&nbsp;" required minlength="12"
+              maxlength="12" />
+            <span class="modal-label__span">Телефон</span>
+            <svg class="icon-modal">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+            <svg class="modal-alert" width="20" height="20">
+              <use class="modal-alert__success" href="./images/sprite.svg#success"></use>
+              <use class="modal-alert__warning" href="./images/sprite.svg#warning"></use>
+            </svg>
+          </label>
+          <label class="modal-label">
+            <input type="email" name="mail" class="modal-label__input" placeholder="&nbsp;" required />
+            <span class="modal-label__span">Імейл</span>
+            <svg class="icon-modal">
+              <use href="./images/sprite.svg#email"></use>
+            </svg>
+            <svg class="modal-alert" width="20" height="20">
+              <use class="modal-alert__success" href="./images/sprite.svg#success"></use>
+              <use class="modal-alert__warning" href="./images/sprite.svg#warning"></use>
+            </svg>
+          </label>
+          <label class="modal-label">
+            <textarea name="" rows="10" placeholder="Введіть коментар..." class="modal-label__textarea"></textarea>
+            <span class="modal-label__comment">Коментар</span>
+          </label>
+        </div>
+        <label class="modal-check modal-check--policy">
+          <input type="checkbox" name="policy" class="modal-check__checkbox" />
+          <span class="modal-check__text-policy">Я погоджуюся з
+            <a href="" class="modal-check__agreement">Умовами конфіденційності</a></span>
+        </label>
+        <button type="submit" class="button form-modal__button">
+          Відправити
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <!-- <script>
       const { height: pageHeaderHeight } = document
         .querySelector(".header")
         .getBoundingClientRect();
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script> -->
-  </body>
+</body>
+
 </html>

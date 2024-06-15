@@ -1,0 +1,50 @@
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about__container {
+    // display: flex;
+    @include displayed();
+}
+
+.about-img {
+    margin-right: 30px;
+}
+
+.title--margin {
+    margin-bottom: 20px;
+}
+
+.about-wrapper__text-visit {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.36px;
+
+    color: $text-color;
+}
+
+.about-wrapper__about-text {
+    margin-bottom: 42px;
+    font-size: 14px;
+    line-height: 1.9;
+    letter-spacing: 0.28px;
+
+    color: $text-color;
+}
+
+.about-wrapper__button,
+.form-modal__button {
+    color: $main-color;
+
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $second-color;
+        background-color: $color-focus;
+    }
+}

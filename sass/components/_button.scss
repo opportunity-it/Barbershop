@@ -1,0 +1,19 @@
+.button {
+    min-width: 160px;
+    padding: 12px 20px;
+
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: $basic-font-weight;
+    line-height: 1.33;
+    letter-spacing: 1.08px;
+
+    text-transform: $text-subtitle-case;
+    cursor: pointer;
+
+    color: $second-color;
+    background-color: transparent;
+    // border-radius: 25px;
+    // border: 1px solid $color-focus;
+    @include borderedMix(25px, 1px, $color-focus);
+}

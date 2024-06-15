@@ -1,0 +1,16 @@
+.booking-contacts {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1660px;
+
+    background-color: #191c26;
+    background-image: url("../images/bg-contacts.png");
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+    background-repeat: no-repeat;
+}
+
+.container--book-cont-display {
+    // display: flex;
+    @include displayed();
+}

@@ -1,0 +1,85 @@
+.barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #f7f7f7;
+}
+
+.barbers-list {
+    @extend %list;
+    margin: -15px;
+    // display: flex;
+    @include displayed();
+
+    &__item {
+        margin: 15px;
+    }
+}
+
+.description-img {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.wrapper-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 108, 0, 0.5);
+
+    transform: translateX(100%);
+    opacity: 0;
+
+    transition:
+        transform 250ms linear,
+        opacity 250ms linear;
+
+    .barbers-list__item:hover & {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.wrapper-text__barbers-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.36px;
+
+    color: $second-color;
+
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    .barbers-list__item:hover &,
+    .barbers-list__item:focus & {
+        opacity: 1;
+    }
+}
+
+.barbers-name {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.36px;
+    color: $main-color;
+}
+
+.barbers-list__job {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.28px;
+
+    color: $color-focus;
+}

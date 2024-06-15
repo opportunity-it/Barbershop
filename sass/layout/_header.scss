@@ -1,0 +1,142 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__container {
+        // display: flex;
+        @include displayed();
+        align-items: center;
+    }
+
+    &__nav {
+        // display: flex;
+        @include displayed();
+    }
+}
+
+.logo {
+    margin-right: 131px;
+    width: 69px;
+    height: 55px;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header-list {
+    @extend %list;
+    // display: flex;
+    @include displayed();
+}
+
+.header-list__item {
+    margin-left: 30px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.header-list__link {
+    @extend %link;
+    position: relative;
+    // display: block;
+    @include displayed(block);
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: $basic-font-weight;
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+
+    color: $second-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $color-focus;
+    }
+}
+
+.header-list__link--current::after,
+.tel-button__tel--current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    // display: block;
+    @include displayed(block);
+
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: $color-focus;
+
+    transform: scaleX(0);
+    opacity: 0;
+
+    transition:
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-list__link--current:hover::after,
+.header-list__link--current:focus::after,
+.tel-button__tel--current:hover::after,
+.tel-button__tel--current:focus::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.tel-button {
+    // display: flex;
+    @include displayed();
+
+    align-items: center;
+    margin-left: auto;
+}
+
+.tel-button__tel {
+    @extend %link;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+
+    font-size: 12px;
+    font-weight: $basic-font-weight;
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+    text-transform: $text-subtitle-case;
+
+    color: $second-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $color-focus;
+    }
+}
+
+.button--header-transition,
+.button--booking-transition {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button--header-transition:hover,
+.button--header-transition:focus,
+.button--booking-transition:hover,
+.button--booking-transition:focus {
+    background-color: $color-focus;
+}

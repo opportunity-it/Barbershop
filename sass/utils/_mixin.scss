@@ -1,0 +1,8 @@
+@mixin borderedMix($value, $size, $color) {
+    border-radius: $value;
+    border: $size solid $color;
+}
+
+@mixin displayed($type: flex) {
+    display: $type;
+}
