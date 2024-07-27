@@ -74,6 +74,12 @@
     color: rgba(157, 164, 189, 0.6);
 }
 
+.subtitle--letter-space{
+   @media screen and (max-width:767px) {
+     letter-spacing: 1.1px;
+   }
+}
+
 .subtitle--bg-color::before {
     background-color: rgba(157, 164, 189, 0.6);
 }

@@ -13,8 +13,10 @@
     // display: flex;
     @include displayed();
 
-    flex-wrap: wrap;
     margin-right: 130px;
+
+    flex-wrap: wrap;
+
     width: 370px;
 }
 
@@ -23,9 +25,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
-    text-align: center;
+
     width: 170px;
     height: 133px;
+    
+    text-align: center;
 
     background-color: #f7f7f7;
 
