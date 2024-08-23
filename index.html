@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -45,11 +45,16 @@
           Online-booking
         </button>
       </div>
+      <button class="menu-toggle menu-toggle--indent js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__mobile-open" width="40" height="40">
+          <use href="./images/sprite.svg#mobile-open"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <!-- hero -->
   <main>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container hero__container">
         <div class="social-wrapper">
           <ul class="social-list social-list--transform">
@@ -74,7 +79,7 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- about -->
     <!-- <section class="about" id="about">
       <div class="container about__container">
@@ -110,54 +115,56 @@
         <div class="our-price">
           <ul class="services-list services-list--first">
             <li class="services-list__item">
-              <p class="services-list__text services-list__text--color">Men’s haircut</p>
-              <p class="services-list__text services-list__text--color">from 300 uah.</p>
+              <p class="services-list__text services-list__text--color">
+                Men’s haircut
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 300 uah.
+              </p>
             </li>
             <li class="services-list__item">
-              <p class="services-list__text services-list__text--color">Beard trim</p>
-              <p class="services-list__text services-list__text--color">from 300 uah.</p>
+              <p class="services-list__text services-list__text--color">
+                Beard trim
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 300 uah.
+              </p>
             </li>
             <li class="services-list__item">
-              <p class="services-list__text services-list__text--color">Mustache trim</p>
-              <p class="services-list__text services-list__text--color">from 200 uah.</p>
+              <p class="services-list__text services-list__text--color">
+                Mustache trim
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 200 uah.
+              </p>
             </li>
             <li class="services-list__item">
-              <p class="services-list__text services-list__text--color">Straight razor shave</p>
-              <p class="services-list__text services-list__text--color">from 200 uah.</p>
+              <p class="services-list__text services-list__text--color">
+                Straight razor shave
+              </p>
+              <p class="services-list__text services-list__text--color">
+                from 200 uah.
+              </p>
             </li>
           </ul>
           <ul class="services-list services-list--second">
             <li class="services-list__item">
-              <p class="services-list__text">
-                Trainee’s haircut
-              </p>
-              <p class="services-list__text">
-                from 50 uah.
-              </p>
+              <p class="services-list__text">Trainee’s haircut</p>
+              <p class="services-list__text">from 50 uah.</p>
             </li>
             <li class="services-list__item">
-              <p class="services-list__text">
-                Haircut under the nozzle
-              </p>
-              <p class="services-list__text">
-                from 200 uah.
-              </p>
+              <p class="services-list__text">Haircut under the nozzle</p>
+              <p class="services-list__text">from 200 uah.</p>
             </li>
             <li class="services-list__item">
               <p class="services-list__text">
                 Children’s haircut (0-12 y.o.)
               </p>
-              <p class="services-list__text">
-                from 300 uah.
-              </p>
+              <p class="services-list__text">from 300 uah.</p>
             </li>
             <li class="services-list__item">
-              <p class="services-list__text">
-                Camouflage of gray hair
-              </p>
-              <p class="services-list__text">
-                from 200 uah.
-              </p>
+              <p class="services-list__text">Camouflage of gray hair</p>
+              <p class="services-list__text">from 200 uah.</p>
             </li>
           </ul>
         </div>
@@ -171,33 +178,38 @@
       <div class="container benefits__container">
         <div class="benefits-description">
           <p class="subtitle">Old traditional school</p>
-          <h2 class="title title--benefits-styles">¿Why people come to&nbsp;us?</h2>
+          <h2 class="title title--benefits-styles">
+            ¿Why people come to&nbsp;us?
+          </h2>
           <p class="benefits-description__after-title benefits-description__after-title--max-width">
             Only good things are said about us. But it's better to see and
             feel 1 time than read 10 times.
           </p>
         </div>
-     <div class="wrapper-benefits">
-         <ul class="benefits-list">
-          <li class="benefits-list__item">
-            <span class="wrapper-amount">600</span>
-            <p class="wrapper-amount__text">Satisfied customers per day</p>
-          </li>
-          <li class="benefits-list__item">
-            <span class="wrapper-amount">50</span>
+        <div class="wrapper-benefits">
+          <ul class="benefits-list">
+            <li class="benefits-list__item">
+              <span class="wrapper-amount">600</span>
+              <p class="wrapper-amount__text">Satisfied customers per day</p>
+            </li>
+            <li class="benefits-list__item">
+              <span class="wrapper-amount">50</span>
 
-            <p class="wrapper-amount__text">Awards for excellent service</p>
-          </li>
-          <li class="benefits-list__item">
-            <span class="wrapper-amount">20</span>
-            <p class="wrapper-amount__text">Kyiv’s best <br> barbers</p>
-          </li>
-          <li class="benefits-list__item">
-            <span class="wrapper-amount">100</span>
-            <p class="wrapper-amount__text">Gifts for regular customers</p>
-          </li>
-        </ul>
-     </div>
+              <p class="wrapper-amount__text">Awards for excellent service</p>
+            </li>
+            <li class="benefits-list__item">
+              <span class="wrapper-amount">20</span>
+              <p class="wrapper-amount__text">
+                Kyiv’s best <br />
+                barbers
+              </p>
+            </li>
+            <li class="benefits-list__item">
+              <span class="wrapper-amount">100</span>
+              <p class="wrapper-amount__text">Gifts for regular customers</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- barbers -->
@@ -529,6 +541,46 @@
       </form>
     </div>
   </div> -->
+
+  <!-- MOBILE-MENU  -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle menu-toggle--position js-close-menu">
+      <svg class="menu-toggle__mobile-close" width="40" height="40">
+        <use href="./images/sprite.svg#mobile-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="">About</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="">Services and prices</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="">Barbers</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="">Contacts</a>
+      </li>
+    </ul>
+    <div class="mobile-tel-button">
+      <a href="tel:+380441111111" class="mobile-tel-button__tel mobile-tel-button__tel--geometry">+38 044 111 11 11</a>
+      <button type="button" class="button button--mobile-styles"
+        data-open-modal>
+        Online-booking
+      </button>
+    </div>
+    <div class="mobile-social-wrapper">
+      <ul class="mobile-social-list">
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+        </li>
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <script src="./js/modal.js"></script>
   <!-- <script>
       const { height: pageHeaderHeight } = document
@@ -537,6 +589,14 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- блокування скролу-при відкриванні мобільного меню -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
