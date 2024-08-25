@@ -521,6 +521,7 @@ summary {
           justify-content: space-between;
   background-color: #ffffff;
   z-index: 999;
+  overflow-y: scroll;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
