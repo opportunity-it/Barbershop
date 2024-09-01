@@ -35,7 +35,8 @@ img {
   margin: 0;
 }
 
-.contacts-list__link, .social-list__link, .tel-button__tel, .header-list__link, .mobile-social-list__link, .mobile-menu__link,
+.contacts-list__link, .social-list__link, .header-list__link,
+.tel-button__tel, .mobile-social-list__link, .mobile-menu__link,
 .mobile-tel-button__tel {
   text-decoration: none;
 }
@@ -759,7 +760,8 @@ summary {
   margin-left: 0;
 }
 
-.header-list__link {
+.header-list__link,
+.tel-button__tel {
   position: relative;
   display: block;
   padding-top: 52px;
@@ -772,8 +774,22 @@ summary {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-list__link:hover, .header-list__link:focus {
+.header-list__link:hover, .header-list__link:focus,
+.tel-button__tel:hover,
+.tel-button__tel:focus {
   color: #ff6c00;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tel-button__tel {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tel-button__tel {
+    padding: 0;
+  }
 }
 
 .header-list__link--current::after,
@@ -781,7 +797,7 @@ summary {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 20px;
   display: block;
   width: 100%;
   height: 4px;
@@ -794,6 +810,12 @@ summary {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .header-list__link--current::after,
+  .tel-button__tel--current::after {
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -843,33 +865,6 @@ summary {
   .tel-button {
     gap: 40px;
   }
-}
-
-.tel-button__tel {
-  position: relative;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.3333333333;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: #ffffff;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tel-button__tel {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .tel-button__tel {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-.tel-button__tel:hover, .tel-button__tel:focus {
-  color: #ff6c00;
 }
 
 .button--header-transition,

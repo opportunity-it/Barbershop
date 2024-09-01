@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
 
-       width: 100%;
+    width: 100%;
 
     background-color: rgba(25, 38, 28, 0.2);
     z-index: 100;
@@ -24,10 +24,10 @@
         backdrop-filter: blur(4px);
     }
 
-   @media screen and (max-width:767px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-   }
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .logo {
@@ -36,12 +36,12 @@
 
     display: block;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         margin-right: 60px;
     }
 
-     @media screen and (min-width:1200px) {
-           margin-right: 131px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 131px;
     }
 }
 
@@ -70,21 +70,21 @@
 }
 
 .header-list__item {
-@media screen and (min-width:768px) {
-    margin-left: 16px;
-}
+    @media screen and (min-width: 768px) {
+        margin-left: 16px;
+    }
 
-@media screen and (min-width:1200px) {
-    margin-left: 30px;
-
-}
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
 
     &:first-child {
         margin-left: 0;
     }
 }
 
-.header-list__link {
+.header-list__link,
+.tel-button__tel {
     @extend %link;
     position: relative;
     // display: block;
@@ -95,7 +95,7 @@
 
     font-size: 12px;
     font-weight: $basic-font-weight;
-    line-height: calc(16/12);
+    line-height: calc(16 / 12);
     letter-spacing: 1.2px;
 
     color: $second-color;
@@ -107,13 +107,23 @@
         color: $color-focus;
     }
 }
+.tel-button__tel{
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        align-self: flex-end;
+    }
+
+    @media screen and (max-width: 1199px) {
+        padding: 0;
+    }
+}
+
 
 .header-list__link--current::after,
 .tel-button__tel--current::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 20px;
     // display: block;
     @include displayed(block);
 
@@ -129,13 +139,18 @@
     transition:
         transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    @media screen and (max-width:1199px) {
-        .tel-button__tel--current::after {
-            display: none;
-        }  
+        @media screen and (min-width:1200px) {
+    bottom: 0;
+            
+        }
+}
+
+@media screen and (max-width: 1199px) {
+    .tel-button__tel--current::after {
+        display: none;
     }
+}
 
 .header-list__link--current:hover::after,
 .header-list__link--current:focus::after,
@@ -156,45 +171,17 @@
         display: none;
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-direction: column-reverse;
         align-self: flex-end;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         gap: 24px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
         gap: 40px;
-    }
-}
-
-.tel-button__tel {
-    @extend %link;
-    position: relative; 
-
-    font-size: 12px;
-    font-weight: $basic-font-weight;
-    line-height: calc(16/12);
-    letter-spacing: 1.2px;
-    text-transform: $text-subtitle-case;
-
-    color: $second-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        align-self: flex-end;
-    }
-
-    @media screen and (min-width:1200px) {
-     padding-top: 20px;
-    padding-bottom: 20px;  
-    }
-    
-    &:hover,
-    &:focus {
-        color: $color-focus;
     }
 }
 
