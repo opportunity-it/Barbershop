@@ -1,11 +1,13 @@
 .button {
+    padding: 11px 19px;
+
     min-width: 160px;
-    padding: 12px 20px;
+    min-height: 40px;
 
     font-size: 12px;
     font-family: inherit;
     font-weight: $basic-font-weight;
-    line-height: 1.33;
+    line-height: calc(16/12);
     letter-spacing: 1.08px;
 
     text-transform: $text-subtitle-case;

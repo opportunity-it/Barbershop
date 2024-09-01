@@ -15,7 +15,7 @@
 
 <body>
   <!-- header -->
-  <header class="header">
+  <header class="header" data-header>
     <div class="container header__container">
       <nav class="header__nav">
         <a href="./index.html" class="logo">
@@ -52,8 +52,8 @@
       </button>
     </div>
   </header>
-  <!-- hero -->
   <main>
+    <!-- hero -->
     <!-- <section class="hero">
       <div class="container hero__container">
         <div class="social-wrapper">
@@ -67,13 +67,13 @@
           </ul>
         </div>
         <div class="hero-description">
-          <p class="subtitle subtitle--color subtitle--bg-color subtitle--letter-space">
+          <p class="subtitle subtitle--hero-animation subtitle--color subtitle--bg-color subtitle--letter-space">
             A hair salon for men in Kyiv
           </p>
-          <h1 class="hero-title animate__animated animate__bounce">
+          <h1 class="hero-title hero-title--animation animate__animated animate__bounce">
             BarberShop
           </h1>
-          <p class="hero-text animate__animated animate__flipInY">
+          <p class="hero-text hero-text--animation animate__animated animate__flipInY">
             We are experts in trendy men’s haircuts. We work quickly,
             carefully and with style.
           </p>
@@ -581,21 +581,15 @@
       </ul>
     </div>
   </div>
-  <script src="./js/modal.js"></script>
-  <!-- <script>
-      const { height: pageHeaderHeight } = document
-        .querySelector(".header")
-        .getBoundingClientRect();
-
-      document.body.style.paddingTop = `${pageHeaderHeight}px`;
-    </script> -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <!-- блокування скролу-при відкриванні мобільного меню -->
+  <script
+   defer
+   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+   crossorigin="anonymous"
+ ></script>
+ <!-- блокування скролу-при відкриванні мобільного меню -->
+ <script src="./js/header.js"></script>
+ <script src="./js/modal.js"></script> 
     <script src="./js/mobile-menu.js"></script>
 </body>
 
