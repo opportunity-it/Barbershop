@@ -38,6 +38,27 @@
 // });
 
 
+// document.addEventListener('DOMContentLoaded', function() {
+//   const burger = document.querySelector('.header-burger');
+//   const menuContainer = document.querySelector('.menu-container');
+//   const header = document.querySelector('[data-header]');
+
+//   burger.addEventListener('click', function() {
+//     burger.classList.toggle('active');
+//     menuContainer.classList.toggle('active');
+//     document.body.classList.toggle('no-scroll');
+
+//     if (menuContainer.classList.contains('active')) {
+//       header.classList.add('no-transparency');
+//     } else {
+//       header.classList.remove('no-transparency');
+//     }
+//   });
+// });
+// // Щоб було розмиття хедера без прокрутки сторінки
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const burger = document.querySelector('.header-burger');
   const menuContainer = document.querySelector('.menu-container');
@@ -48,11 +69,20 @@ document.addEventListener('DOMContentLoaded', function() {
     menuContainer.classList.toggle('active');
     document.body.classList.toggle('no-scroll');
 
+    // Перевірка чи меню активне
     if (menuContainer.classList.contains('active')) {
       header.classList.add('no-transparency');
     } else {
-      header.classList.remove('no-transparency');
+      // Перевірка чи є прокрутка, якщо є — залишаємо no-transparency
+      const pageOffset = window.pageYOffset;
+      const headerOffsetTrigger = header.offsetHeight;
+
+      if (pageOffset > headerOffsetTrigger) {
+        header.classList.add('no-transparency');
+      } else {
+        header.classList.remove('no-transparency');
+      }
     }
   });
 });
-// Щоб було розмиття хедера без прокрутки сторінки
+
