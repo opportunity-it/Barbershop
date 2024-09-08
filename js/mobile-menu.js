@@ -69,11 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
     menuContainer.classList.toggle('active');
     document.body.classList.toggle('no-scroll');
 
-    // Перевірка чи меню активне
     if (menuContainer.classList.contains('active')) {
       header.classList.add('no-transparency');
     } else {
-      // Перевірка чи є прокрутка, якщо є — залишаємо no-transparency
       const pageOffset = window.pageYOffset;
       const headerOffsetTrigger = header.offsetHeight;
 
@@ -85,4 +83,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+//  Щоб було розмиття хедера після закриття мобільного меню з прокруткою
 

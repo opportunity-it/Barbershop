@@ -40,14 +40,13 @@ function changeHeaderBackground() {
   const headerOffsetTrigger = header.offsetHeight;
   const pageOffset = window.pageYOffset;
 
-  // Перевірка чи меню активне
   const menuIsActive = document.querySelector('.menu-container').classList.contains('active');
 
-  // Додаємо клас якщо прокручено більше ніж висота заголовка або меню активне
   if (pageOffset > headerOffsetTrigger || menuIsActive) {
     header.classList.add('no-transparency');
   } else {
     header.classList.remove('no-transparency');
   }
 }
+//  Щоб було розмиття хедера після закриття мобільного меню з прокруткою
 
