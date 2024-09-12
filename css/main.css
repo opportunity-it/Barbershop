@@ -411,7 +411,8 @@ summary {
   background-color: rgba(25, 28, 38, 0.2);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  z-index: 99;
+  z-index: 6;
+  overflow: auto;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -438,6 +439,13 @@ summary {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .backdrop__modal {
+    top: 2%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
 }
 .backdrop.is-hidden .backdrop__modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
@@ -628,7 +636,7 @@ summary {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 5;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-backdrop-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-backdrop-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), backdrop-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
