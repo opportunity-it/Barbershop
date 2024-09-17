@@ -20,9 +20,12 @@
         // display: inline-block;
         @include displayed(inline-block);
 
-        vertical-align: middle;
         background-color: $main-color;
     }
+}
+
+.subtitle--color {
+    color: rgba(157, 164, 189, 0.6);
 }
 
 .title {
