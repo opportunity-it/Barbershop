@@ -1,6 +1,14 @@
 .about {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    margin-bottom: 84px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 .about__container {
@@ -8,30 +16,84 @@
     @include displayed();
 }
 
-.about-img {
-    margin-right: 30px;
+.pictures-about {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    } 
+
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+    }
+   }
+
+
+
+.about-wrapper {
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-right: 100px;
+    }
 }
 
-.title--margin {
+.title--geometry {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 306px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        letter-spacing: 1.4px;
+        line-height: calc(33/28);
+    }
 }
 
-.about-wrapper__text-visit {
+.about-wrapper__text-visit,
+ .about-wrapper__word{
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 1.7;
-    letter-spacing: 0.36px;
+
+    line-height: calc(26 / 16);
+    letter-spacing: 0.32px;
 
     color: $text-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: calc(30/18);
+    }
 }
 
+ .about-wrapper__word{
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+    }
+
 .about-wrapper__about-text {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     font-size: 14px;
-    line-height: 1.9;
+    line-height: calc(26 / 14);
     letter-spacing: 0.28px;
 
     color: $text-color;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 77px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 42px;
+    }
 }
 
 .about-wrapper__button,
