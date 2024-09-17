@@ -1259,37 +1259,37 @@ summary {
   background-position: center;
   background-size: cover;
   background-color: rgb(17, 19, 25);
-  background-image: url("../../images/services-mob-bg.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
-  background-image: url("../../images/services-mob-bg.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
+  background-image: url("../images/services-mob-bg.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
+  background-image: url("../images/services-mob-bg.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .services {
-    background-image: url("../../images/services-mob-bg-@2x.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
-    background-image: url("../../images/services-mob-bg-@2x.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
+    background-image: url("../images/services-mob-bg-@2x.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
+    background-image: url("../images/services-mob-bg-@2x.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
   }
 }
 @media screen and (min-width: 481px) {
   .services {
-    background-image: url("../../images/services-tab-bg.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
-    background-image: url("../../images/services-tab-bg.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
+    background-image: url("../images/services-tab-bg.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
+    background-image: url("../images/services-tab-bg.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .services {
-    background-image: url("../../images/services-tab-bg-@2x.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
-    background-image: url("../../images/services-tab-bg-@2x.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
+    background-image: url("../images/services-tab-bg-@2x.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
+    background-image: url("../images/services-tab-bg-@2x.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
   }
 }
 @media screen and (min-width: 769px) {
   .services {
-    background-image: url("../../images/services-desk-bg.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
-    background-image: url("../../images/services-desk-bg.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
+    background-image: url("../images/services-desk-bg.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
+    background-image: url("../images/services-desk-bg.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .services {
-    background-image: url("../../images/services-desk-bg-@2x.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
-    background-image: url("../../images/services-desk-bg-@2x.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
+    background-image: url("../images/services-desk-bg-@2x.png"), -webkit-gradient(linear, left top, left bottom, from(rgb(17, 19, 25)), to(rgb(17, 19, 25)));
+    background-image: url("../images/services-desk-bg-@2x.png"), linear-gradient(rgb(17, 19, 25), rgb(17, 19, 25));
   }
 }
 @media screen and (max-width: 767px) {

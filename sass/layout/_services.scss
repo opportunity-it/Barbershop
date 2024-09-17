@@ -14,30 +14,30 @@
     background-color: rgba(17, 19, 25, 1);
 
     // мобільний екран
-    background-image: url("../../images/services-mob-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+    background-image: url("../images/services-mob-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     // ретіна для телефону
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url("../../images/services-mob-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-mob-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
 
     //   чи екран дорівнює або більший ніж 481px
     @media screen and (min-width: 481px) {
-        background-image: url("../../images/services-tab-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-tab-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
     @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
         screen and (min-width: 481px) and (min-resolution: 192dpi),
         screen and (min-width: 481px) and (min-resolution: 2dppx) {
-        background-image: url("../../images/services-tab-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-tab-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
 
     //   чи екран дорівнює або більший ніж 769px
     @media screen and (min-width: 769px) {
-        background-image: url("../../images/services-desk-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-desk-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
     @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
         screen and (min-width: 769px) and (min-resolution: 192dpi),
         screen and (min-width: 769px) and (min-resolution: 2dppx) {
-        background-image: url("../../images/services-desk-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-desk-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
 
     @media screen and (max-width:767px) {
