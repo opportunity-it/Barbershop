@@ -74,12 +74,12 @@
             Online-booking
           </button>
         </div> -->
-        <!-- <button class="menu-toggle menu-toggle--indent js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <!-- <button class="menu-toggle menu-toggle--indent js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu-toggle__mobile-open" width="40" height="40">
           <use href="./images/sprite.svg#mobile-open"></use>
         </svg>
       </button> -->
-        <!-- <div class="header-burger">
+    <!-- <div class="header-burger">
           <span></span>
         </div>
       </div>
@@ -230,7 +230,9 @@
           <p class="subtitle subtitle--color subtitle--bg-color">
             Spend your time with the best masters
           </p>
-          <h2 class="title title--light-color title--geometry-services">Services and prices</h2>
+          <h2 class="title title--light-color title--geometry-services">
+            Services and prices
+          </h2>
           <div class="our-price">
             <ul class="services-list services-list--first">
               <li class="services-list__item">
@@ -315,7 +317,9 @@
             <ul class="benefits-list">
               <li class="benefits-list__item">
                 <span class="wrapper-amount">600</span>
-                <p class="wrapper-amount__text">Satisfied customers per&nbsp;day</p>
+                <p class="wrapper-amount__text">
+                  Satisfied customers per&nbsp;day
+                </p>
               </li>
               <li class="benefits-list__item">
                 <span class="wrapper-amount">50</span>
@@ -338,177 +342,396 @@
         </div>
       </section>
       <!-- barbers -->
-      <!-- <section id="barbers" class="barbers">
-      <div class="container">
-        <p class="subtitle">For true enjoyers of the atmosphere</p>
-        <h2 class="title">Our barbers</h2>
-        <ul class="barbers-list">
-          <li class="barbers-list__item">
-            <div class="description-img">
-              <img src="./images/john-smith-opt.jpg" alt="John Smith" width="370" />
-              <div class="wrapper-text">
-                <p class="wrapper-text__barbers-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quas vitae esse delectus, ex dolore voluptatem recusandae
-                  soluta architecto maxime velit deserunt sequi ipsum
-                  doloremque quisquam, nulla reprehenderit numquam. Iusto
-                  aspernatur esse hic a asperiores ea beatae, voluptas, ex
-                  laboriosam molestiae repudiandae explicabo alias officia?
-                  Deserunt quas qui accusantium fugit nesciunt!
-                </p>
+      <section id="barbers" class="barbers">
+        <div class="container">
+          <p class="subtitle">For true enjoyers of the atmosphere</p>
+          <h2 class="title title--size">Our barbers</h2>
+          <ul class="barbers-list">
+            <li class="barbers-list__item">
+              <div class="description-img">
+                <picture>
+                  <!-- desktop  -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/john-smith_370.jpg 1x,
+                      ./images/john-smith_740.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/john-smith_370.webp 1x,
+                      ./images/john-smith_740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <!-- tablet  -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/john-smith_450.jpg 1x,
+                      ./images/john-smith_900.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/john-smith_450.webp 1x,
+                      ./images/john-smith_900.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <!-- mobile  -->
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/john-smith_418.jpg 1x,
+                      ./images/john-smith_836.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/john-smith_418.webp 1x,
+                      ./images/john-smith_836.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="./images/john-smith_418.jpg" alt="John Smith" />
+                </picture>
+                <div class="wrapper-text">
+                  <p class="wrapper-text__barbers-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas vitae esse delectus, ex dolore voluptatem recusandae
+                    soluta architecto maxime velit deserunt sequi ipsum
+                    doloremque quisquam, nulla reprehenderit numquam. Iusto
+                    aspernatur esse hic a asperiores ea beatae, voluptas, ex
+                    laboriosam molestiae repudiandae explicabo alias officia?
+                    Deserunt quas qui accusantium fugit nesciunt!
+                  </p>
+                </div>
               </div>
-            </div>
-            <h3 class="barbers-name">John Smith</h3>
-            <p class="barbers-list__job">Extreme Barber</p>
-            <ul class="social-icons">
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на інстаграм" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на твіттер" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на фейсбук" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на лінкедин" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="barbers-list__item">
-            <div class="description-img">
-              <img src="./images/michele-doe-opt.jpg" alt="Michele Doe" width="370" />
-              <div class="wrapper-text">
-                <p class="wrapper-text__barbers-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quas vitae esse delectus, ex dolore voluptatem recusandae
-                  soluta architecto maxime velit deserunt sequi ipsum
-                  doloremque quisquam, nulla reprehenderit numquam. Iusto
-                  aspernatur esse hic a asperiores ea beatae, voluptas, ex
-                  laboriosam molestiae repudiandae explicabo alias officia?
-                  Deserunt quas qui accusantium fugit nesciunt!
-                </p>
+              <h3 class="barbers-name">John Smith</h3>
+              <p class="barbers-list__job">Extreme Barber</p>
+              <ul class="social-icons">
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на інстаграм"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на твіттер"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на фейсбук"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на лінкедин"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers-list__item">
+              <div class="description-img">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/michele-doe_370.jpg 1x,
+                      ./images/michele-doe_740.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/michele-doe_370.webp 1x,
+                      ./images/michele-doe_740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width:768px )"
+                    srcset="
+                      ./images/michele-doe_450.jpg 1x,
+                      ./images/michele-doe_900.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="
+                      ./images/michele-doe_450.webp 1x,
+                      ./images/michele-doe_900.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <!-- mobile  -->
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/michele-doe_418.jpg 1x,
+                      ./images/michele-doe_836.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/michele-doe_418.webp 1x,
+                      ./images/michele-doe_836.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="./images/michele-doe_418.jpg" alt="Michele Doe" />
+                </picture>
+                <div class="wrapper-text">
+                  <p class="wrapper-text__barbers-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas vitae esse delectus, ex dolore voluptatem recusandae
+                    soluta architecto maxime velit deserunt sequi ipsum
+                    doloremque quisquam, nulla reprehenderit numquam. Iusto
+                    aspernatur esse hic a asperiores ea beatae, voluptas, ex
+                    laboriosam molestiae repudiandae explicabo alias officia?
+                    Deserunt quas qui accusantium fugit nesciunt!
+                  </p>
+                </div>
               </div>
-            </div>
-            <h3 class="barbers-name">Michele Doe</h3>
-            <p class="barbers-list__job">Extreme Barber</p>
-            <ul class="social-icons">
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на інстаграм" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на твіттер" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на фейсбук" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на лінкедин" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="barbers-list__item">
-            <div class="description-img">
-              <img src="./images/alan-black-opt.jpg" alt="Alan Black" width="370" />
-              <div class="wrapper-text">
-                <p class="wrapper-text__barbers-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quas vitae esse delectus, ex dolore voluptatem recusandae
-                  soluta architecto maxime velit deserunt sequi ipsum
-                  doloremque quisquam, nulla reprehenderit numquam. Iusto
-                  aspernatur esse hic a asperiores ea beatae, voluptas, ex
-                  laboriosam molestiae repudiandae explicabo alias officia?
-                  Deserunt quas qui accusantium fugit nesciunt!
-                </p>
+              <h3 class="barbers-name">Michele Doe</h3>
+              <p class="barbers-list__job">Extreme Barber</p>
+              <ul class="social-icons">
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на інстаграм"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на твіттер"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на фейсбук"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на лінкедин"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers-list__item">
+              <div class="description-img">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/alan-black_370.jpg  1x,
+                      ./images/michele-doe_740.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/alan-black_370.webp 1x,
+                      ./images/alan-black_740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width:768px )"
+                    srcset="
+                      ./images/alan-black_450.jpg 1x,
+                      ./images/alan-black_900.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="
+                      ./images/alan-black_450.webp 1x,
+                      ./images/alan-black_900.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <!-- mobile  -->
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/alan-black_418.jpg 1x,
+                      ./images/alan-black_836.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/alan-black_418.webp 1x,
+                      ./images/alan-black_836.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="./images/alan-black_418.jpg" alt="Alan Black" />
+                </picture>
+                <div class="wrapper-text">
+                  <p class="wrapper-text__barbers-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas vitae esse delectus, ex dolore voluptatem recusandae
+                    soluta architecto maxime velit deserunt sequi ipsum
+                    doloremque quisquam, nulla reprehenderit numquam. Iusto
+                    aspernatur esse hic a asperiores ea beatae, voluptas, ex
+                    laboriosam molestiae repudiandae explicabo alias officia?
+                    Deserunt quas qui accusantium fugit nesciunt!
+                  </p>
+                </div>
               </div>
-            </div>
-            <h3 class="barbers-name">Alan Black</h3>
-            <p class="barbers-list__job">Extreme Barber</p>
-            <ul class="social-icons">
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на інстаграм" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на твіттер" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на фейсбук" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icons__item">
-                <a href="" class="social-icons__link" aria-label="Посилання на лінкедин" target="_blank"
-                  rel="noopener nofollow noreferrer">
-                  <svg class="social-icons__icon" width="20px" height="20px">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section> -->
+              <h3 class="barbers-name">Alan Black</h3>
+              <p class="barbers-list__job">Extreme Barber</p>
+              <ul class="social-icons">
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на інстаграм"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на твіттер"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на фейсбук"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons__item">
+                  <a
+                    href=""
+                    class="social-icons__link"
+                    aria-label="Посилання на лінкедин"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="social-icons__icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!--gallery "barba" means "beard" -->
       <section class="gallery">
         <div class="container">
           <p class="subtitle subtitle--margin-bot">
             In Latin, "barba" means "beard"
           </p>
-          <h2 class="visually-hidden">Our barbers</h2>
+          <h2 class="visually-hidden">Gallery</h2>
           <ul class="gallery-list">
             <li class="gallery-list__item">
               <img

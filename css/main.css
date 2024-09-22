@@ -1575,19 +1575,64 @@ summary {
 }
 
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: #f7f7f7;
 }
-
-.barbers-list {
-  margin: -15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
-.barbers-list__item {
-  margin: 15px;
+@media screen and (max-width: 767px) {
+  .barbers {
+    margin-bottom: 84px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .barbers {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .title--size {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .barbers-list {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .barbers-list__item {
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .barbers-list__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers-list__item {
+    margin: 15px;
+  }
 }
 
 .description-img {
@@ -1639,7 +1684,7 @@ summary {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.3888888889;
   letter-spacing: 0.36px;
   color: #303030;
 }
@@ -1648,7 +1693,7 @@ summary {
   margin-bottom: 30px;
   text-align: center;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.3571428571;
   letter-spacing: 0.28px;
   color: #ff6c00;
 }
