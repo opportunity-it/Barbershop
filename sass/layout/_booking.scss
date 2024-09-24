@@ -1,22 +1,39 @@
 .booking {
-    padding-top: 130px;
-    padding-right: 30px;
-    
-    width: calc(50% + 15px);
+    padding-top: 84px;
+    padding-bottom: 84px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 130px;
+        padding-right: 30px;
+        padding-bottom: 183px;
+
+        width: calc(50% + 15px);
+    }
+}
+
+.title--font-size {
+    @media screen and (max-width: 1199px) {
+        font-size: 42px;
+    }
 }
 
 .booking-group {
     margin-bottom: 44px;
 
-    // display: flex;
-    @include displayed();
+    @media screen and (min-width: 768px) {
+        // display: flex;
+        @include displayed();
 
-    gap: 30px;
-
-    &__input-label {
-        position: relative;
-
-        width: 270px;
+        gap: 30px;
     }
 
     &__input-name {
@@ -27,34 +44,54 @@
 
         font-size: 14px;
 
-        color: rgb(157, 164, 189);
+        color: rgba(157, 164, 189, 0.4);
         border: none;
         border-bottom: 1px solid rgba(157, 164, 189, 0.4);
         background-color: transparent;
         outline: transparent;
 
         transition: border-color 250ms linear;
+        outline: 1px solid red;
+    }
+}
+
+.booking-group__label-name,
+.booking-textarea__label-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: 11px;
+    font-weight: 600;
+    line-height: calc(15 / 11);
+    letter-spacing: 1.1px;
+
+    text-transform: uppercase;
+
+    transform-origin: left;
+    transform: translate(0) scale(1);
+    color: rgba(157, 164, 189, 0.4);
+
+    transition:
+        color 250ms linear,
+        transform 250ms linear;
+}
+
+.booking-group__input-label {
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        width: 330px;
     }
 
-    &__label-name {
-        position: absolute;
-        top: 0;
-        left: 0;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
 
-        font-size: 11px;
-        font-weight: 600;
-        line-height: 1.36;
-        letter-spacing: 1.1px;
-
-        text-transform: uppercase;
-
-        transform-origin: left;
-        transform: translate(0) scale(1);
-        color: rgba(157, 164, 189, 0.4);
-
-        transition:
-            color 250ms linear,
-            transform 250ms linear;
+.booking-group__input-label:first-child {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 44px;
     }
 }
 
@@ -94,6 +131,8 @@
 
     font-size: 14px;
 
+    display: block;
+
     color: rgb(157, 164, 189);
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -123,28 +162,13 @@
     }
 }
 
-.booking-textarea__label-message {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 1.36;
-    letter-spacing: 1.1px;
-    text-transform: uppercase;
-
-    transform-origin: left;
-    transform: translate(0, 0) scale(1);
-    color: rgba(157, 164, 189, 0.4);
-
-    transition:
-        transform 250ms linear,
-        color 250ms linear;
-}
-
 .booking-textarea__textarea-message:focus + .booking-textarea__label-message,
 .booking-textarea__textarea-message:not(:placeholder-shown) + .booking-textarea__label-message {
     transform: translateY(-100%) scale(0.8);
     color: $color-focus;
+}
+
+.button--booking-padding {
+    padding-left: 37px;
+    padding-right: 37px;
 }

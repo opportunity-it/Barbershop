@@ -287,7 +287,6 @@ summary {
   margin-left: auto;
   min-width: 320px;
   max-width: 480px;
-  outline: 2px solid yellow;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -1752,59 +1751,81 @@ summary {
 }
 
 .booking-contacts {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1660px;
   background-color: #191c26;
-  background-image: url("../images/bg-contacts.png");
-  background-position: right;
-  background-size: calc(50% - 15px) 100%;
-  background-repeat: no-repeat;
 }
 
-.container--book-cont-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .container--book-cont-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .booking {
-  padding-top: 130px;
-  padding-right: 30px;
-  width: calc(50% + 15px);
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (max-width: 767px) {
+  .booking {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking {
+    padding-top: 130px;
+    padding-right: 30px;
+    padding-bottom: 183px;
+    width: calc(50% + 15px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .title--font-size {
+    font-size: 42px;
+  }
 }
 
 .booking-group {
   margin-bottom: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
 }
-.booking-group__input-label {
-  position: relative;
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .booking-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
 .booking-group__input-name {
   padding: 0;
   width: 100%;
   height: 24px;
   font-size: 14px;
-  color: rgb(157, 164, 189);
+  color: rgba(157, 164, 189, 0.4);
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   background-color: transparent;
   outline: transparent;
   -webkit-transition: border-color 250ms linear;
   transition: border-color 250ms linear;
+  outline: 1px solid red;
 }
-.booking-group__label-name {
+
+.booking-group__label-name,
+.booking-textarea__label-message {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 11px;
   font-weight: 600;
-  line-height: 1.36;
+  line-height: 1.3636363636;
   letter-spacing: 1.1px;
   text-transform: uppercase;
   -webkit-transform-origin: left;
@@ -1816,6 +1837,26 @@ summary {
   transition: color 250ms linear, -webkit-transform 250ms linear;
   transition: color 250ms linear, transform 250ms linear;
   transition: color 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.booking-group__input-label {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .booking-group__input-label {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking-group__input-label {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .booking-group__input-label:first-child {
+    margin-bottom: 44px;
+  }
 }
 
 .booking-group__input-name:not(:-moz-placeholder-shown) {
@@ -1919,6 +1960,7 @@ summary {
   width: 100%;
   height: 76px;
   font-size: 14px;
+  display: block;
   color: rgb(157, 164, 189);
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -1990,26 +2032,6 @@ summary {
           transition-delay: 250ms;
 }
 
-.booking-textarea__label-message {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 1.36;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: translate(0, 0) scale(1);
-          transform: translate(0, 0) scale(1);
-  color: rgba(157, 164, 189, 0.4);
-  -webkit-transition: color 250ms linear, -webkit-transform 250ms linear;
-  transition: color 250ms linear, -webkit-transform 250ms linear;
-  transition: transform 250ms linear, color 250ms linear;
-  transition: transform 250ms linear, color 250ms linear, -webkit-transform 250ms linear;
-}
-
 .booking-textarea__textarea-message:not(:-moz-placeholder-shown) + .booking-textarea__label-message {
   transform: translateY(-100%) scale(0.8);
   color: #ff6c00;
@@ -2027,11 +2049,17 @@ summary {
   color: #ff6c00;
 }
 
+.button--booking-padding {
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
 .contacts {
   padding-top: 130px;
   padding-bottom: 120px;
   padding-left: 100px;
   width: calc(50% - 15px);
+  outline: 2px solid pink;
 }
 
 .title--individual-margin {
