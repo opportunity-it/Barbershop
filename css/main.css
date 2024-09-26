@@ -487,7 +487,7 @@ summary {
 }
 
 .form-modal__modal-title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: block;
   text-align: center;
 }
@@ -2114,7 +2114,6 @@ summary {
 .contacts {
   padding-top: 84px;
   padding-bottom: 84px;
-  outline: 1px solid pink;
 }
 @media screen and (min-width: 768px) {
   .contacts {
