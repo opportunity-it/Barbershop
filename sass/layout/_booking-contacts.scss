@@ -1,16 +1,70 @@
 .booking-contacts {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1660px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
 
-    background-color: #191c26;
-    background-image: url("../images/bg-contacts.png");
+  background-color: #191c26;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+
+  background-image: url("../../images/contacts-mob-bg.png");
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("../../images/contacts-mob-bg-2x.png");
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    background-size: 100% calc(50% - 31px);
+    background-image: url("../../images/contacts-bg-tab.png");
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 481px) and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (min-width: 481px) and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url("../../images/contacts-bg-tab-2x.png");
+  }
+
+  @media screen and (min-width: 768px) {
+    background-size: auto;
+    background-image: url("../../images/contacts-bg-tab.png");
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-size: auto;
+    background-image: url("../../images/contacts-bg-tab-2x.png");
+  }
+
+  @media screen and (min-width: 769px) {
+    background-size: 100% calc(50% - 36px);
+    background-image: url("../../images/contacts-bg-desk.png");
+  }
+
+  @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 769px) and (min-resolution: 192dpi),
+    screen and (min-width: 769px) and (min-resolution: 2dppx) {
+    background-image: url("../../images/contacts-bg-desk-2x.png");
+  }
+
+  @media screen and (min-width: 1200px) {
     background-position: right;
     background-size: calc(50% - 15px) 100%;
-    background-repeat: no-repeat;
+
+    background-image: url("../../images/contacts-bg-desk.png");
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url("../../images/contacts-bg-desk-2x.png");
+  }
 }
 
 .container--book-cont-display {
+  @media screen and (min-width: 1200px) {
     // display: flex;
     @include displayed();
+  }
 }
