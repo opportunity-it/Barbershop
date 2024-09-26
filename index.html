@@ -74,12 +74,12 @@
             Online-booking
           </button>
         </div>
-    <!-- <button class="menu-toggle menu-toggle--indent js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <!-- <button class="menu-toggle menu-toggle--indent js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu-toggle__mobile-open" width="40" height="40">
           <use href="./images/sprite.svg#mobile-open"></use>
         </svg>
       </button> -->
-    <div class="header-burger">
+        <div class="header-burger">
           <span></span>
         </div>
       </div>
@@ -184,15 +184,15 @@
                   ./images/about-barber-second-desk.webp     1x,
                   ./images/about-barber-second-desk-@2x.webp 2x
                 "
-                 type="image/webp"
+                type="image/webp"
               />
- <source
+              <source
                 media="(min-width:1200px)"
                 srcset="
                   ./images/about-barber-second-desk.jpg     1x,
                   ./images/about-barber-second-desk-@2x.jpg 2x
                 "
-                 type="image/jpg"
+                type="image/jpg"
               />
 
               <!-- tablet -->
@@ -202,9 +202,9 @@
                   ./images/about-barber-second-tab.webp     1x,
                   ./images/about-barber-second-tab-@2x.webp 2x
                 "
-                 type="image/webp"
+                type="image/webp"
               />
-             <source
+              <source
                 media="(min-width:768px)"
                 srcset="
                   ./images/about-barber-second-tab.jpg     1x,
@@ -236,7 +236,9 @@
             <button
               type="button"
               class="button about-wrapper__button"
-              data-open-modal
+              data-modal-open
+              aria-expanded="false"
+              aria-controls="modal"
             >
               Online-booking
             </button>
@@ -311,7 +313,9 @@
           <button
             type="button"
             class="button button--services-button"
-            data-open-modal
+            data-modal-open
+            aria-expanded="false"
+            aria-controls="modal"
           >
             Online-booking
           </button>
@@ -825,87 +829,138 @@
       </section>
       <!-- booking-contacts -->
       <section class="booking-contacts">
-      <div class="container container--book-cont-display">
-        <section class="booking">
-          <h2 class="title title--light-color title--font-size">Online-booking</h2>
-          <form class="booking-form" name="booking_form">
-            <div class="booking-group">
-              <div class="booking-group__input-label">
-                <input type="text" name="name" id="name" minlength="4" placeholder="Андрій Андрійович"
-                  class="booking-group__input-name" required />
-                <label for="name" class="booking-group__label-name">Name*</label>
+        <div class="container container--book-cont-display">
+          <section class="booking">
+            <h2 class="title title--light-color title--font-size">
+              Online-booking
+            </h2>
+            <form class="booking-form" name="booking_form">
+              <div class="booking-group">
+                <div class="booking-group__input-label">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    minlength="4"
+                    placeholder="Андрій Андрійович"
+                    class="booking-group__input-name"
+                    required
+                  />
+                  <label for="name" class="booking-group__label-name"
+                    >Name*</label
+                  >
+                </div>
+                <div class="booking-group__input-label">
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="38 000 000 00 00"
+                    class="booking-group__input-name"
+                    required
+                  />
+                  <label for="tel" class="booking-group__label-name"
+                    >Phone*</label
+                  >
+                </div>
               </div>
-              <div class="booking-group__input-label">
-                <input type="tel" name="tel" id="tel" placeholder="38 000 000 00 00" class="booking-group__input-name"
-                  required />
-                <label for="tel" class="booking-group__label-name">Phone*</label>
+              <div class="booking-textarea">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="3"
+                  class="booking-textarea__textarea-message"
+                  placeholder="Введіть коментар"
+                ></textarea>
+                <label for="message" class="booking-textarea__label-message"
+                  >Message</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="button button--booking-transition button--booking-padding"
+              >
+                Send
+              </button>
+            </form>
+          </section>
+          <section id="contacts" class="contacts">
+            <h2 class="title title--light-color title--contacts-geometry">
+              Contacts
+            </h2>
+            <div class="wrapper-address">
+              <address class="address-contacts">
+                <ul class="contacts-list">
+                  <li class="contacts-list__item-map">
+                    <a
+                      class="contacts-list__link contacts-list__link--font-weight"
+                      href="https://maps.app.goo.gl/K78xXRxyZLYF9gL68"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                    >
+                      <svg class="contacts-list__icon">
+                        <use href="./images/sprite.svg#map-pin"></use>
+                      </svg>
+                      st. Vasilkovaya, 7A Kiev,&nbsp;08132</a
+                    >
+                  </li>
+                  <li class="contacts-list__item-tel">
+                    <a class="contacts-list__link" href="tel:+380441111111">
+                      <svg class="contacts-list__icon">
+                        <use href="./images/sprite.svg#phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="contacts-list__item-mail">
+                    <a
+                      class="contacts-list__link contacts-list__link--text-decor"
+                      href="mailto:barbershop@email.com"
+                    >
+                      <svg class="contacts-list__icon">
+                        <use href="./images/sprite.svg#mail"></use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <div>
+                <p class="subtitle subtitle--light-color subtitle--bg-color">
+                  Working hours
+                </p>
+                <p class="day-time">Every day from 9:00 to 22:00</p>
               </div>
             </div>
-            <div class="booking-textarea">
-              <textarea name="message" id="message" rows="3" class="booking-textarea__textarea-message"
-                placeholder="Введіть коментар"></textarea>
-              <label for="message" class="booking-textarea__label-message">Message</label>
-            </div>
-            <button type="submit" class="button button--booking-transition button--booking-padding">
-              Send
-            </button>
-          </form>
-        </section>
-        <section id="contacts" class="contacts">
-          <h2 class="title title--light-color title--contacts-geometry">
-            Contacts
-          </h2>
-       <div class="wrapper-address">
-           <address class="address-contacts">
-            <ul class="contacts-list">
-              <li class="contacts-list__item-map">
-                <a class="contacts-list__link contacts-list__link--font-weight"
-                  href="https://maps.app.goo.gl/K78xXRxyZLYF9gL68" target="_blank" rel="noopener noreferrer nofollow">
-                  <svg class="contacts-list__icon">
-                    <use href="./images/sprite.svg#map-pin"></use>
-                  </svg>
-                  st. Vasilkovaya, 7A Kiev,&nbsp;08132</a>
-              </li>
-              <li class="contacts-list__item-tel">
-                <a class="contacts-list__link" href="tel:+380441111111">
-                  <svg class="contacts-list__icon">
-                    <use href="./images/sprite.svg#phone"></use>
-                  </svg>
-                  +38 044 111 11 11</a>
-              </li>
-              <li class="contacts-list__item-mail">
-                <a class="contacts-list__link contacts-list__link--text-decor" href="mailto:barbershop@email.com">
-                  <svg class="contacts-list__icon">
-                    <use href="./images/sprite.svg#mail"></use>
-                  </svg>
-                  barbershop@email.com</a>
-              </li>
-            </ul>
-          </address>
-      <div>
-            <p class="subtitle subtitle--light-color subtitle--bg-color">
-            Working hours
-          </p>
-          <p class="day-time">Every day from 9:00 to 22:00</p>
-      
-       </div>
-      </div>  </section>
-      </div>
-    </section>
+          </section>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-    <div class="container footer__container">
-      <p class="footer-text">&copy; Copyright 2020</p>
-      <ul class="social-list social-list--flex-position">
-        <li>
-          <a class="social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
-        </li>
-        <li>
-          <a class="social-list__link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+      <div class="container footer__container">
+        <p class="footer-text">&copy; Copyright 2020</p>
+        <ul class="social-list social-list--flex-position">
+          <li>
+            <a
+              class="social-list__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="social-list__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal id="modal">
       <div class="backdrop__modal">
