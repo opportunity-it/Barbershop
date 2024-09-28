@@ -15,34 +15,41 @@
 
     // мобільний екран
     background-image: url("../images/services-mob-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+
     // ретіна для телефону
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url("../images/services-mob-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-mob-bg-@2x.png"),
+            linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
 
     //   чи екран дорівнює або більший ніж 481px
     @media screen and (min-width: 481px) {
-        background-image: url("../images/services-tab-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-tab-bg.png"),
+            linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
+
     @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
         screen and (min-width: 481px) and (min-resolution: 192dpi),
         screen and (min-width: 481px) and (min-resolution: 2dppx) {
-        background-image: url("../images/services-tab-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-tab-bg-@2x.png"),
+            linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
 
     //   чи екран дорівнює або більший ніж 769px
     @media screen and (min-width: 769px) {
-        background-image: url("../images/services-desk-bg.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-desk-bg.png"),
+            linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
+
     @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
         screen and (min-width: 769px) and (min-resolution: 192dpi),
         screen and (min-width: 769px) and (min-resolution: 2dppx) {
-        background-image: url("../images/services-desk-bg-@2x.png"), linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+        background-image: url("../images/services-desk-bg-@2x.png"),
+            linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
 
-    @media screen and (max-width:767px) {
-    margin-bottom: 84px;
-        
+    @media screen and (max-width: 767px) {
+        margin-bottom: 84px;
     }
 
     @media screen and (min-width: 768px) {
@@ -50,10 +57,10 @@
         padding-top: 100px;
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 100px;
-            }
-            
+    }
+
     @media screen and (min-width: 1200px) {
         padding-bottom: 120px;
         padding-top: 120px;
@@ -64,14 +71,14 @@
     color: $second-color;
 }
 
-.title--geometry-services{
+.title--geometry-services {
     font-size: 40px;
 
-@media screen and (max-width:767px) {
-    line-height: calc(47/40);
+    @media screen and (max-width: 767px) {
+        line-height: calc(47 / 40);
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         font-size: 42px;
         letter-spacing: 2.1px;
     }
@@ -127,15 +134,15 @@
 
     &__text {
         font-size: 14px;
-        line-height: calc(20/14);
+        line-height: calc(20 / 14);
         letter-spacing: 0.28px;
 
         color: $auxiliary-color;
 
         @media screen and (min-width: 768px) {
             font-size: 18px;
-        line-height: calc(30 / 18);
-        letter-spacing: 0.36px;
+            line-height: calc(30 / 18);
+            letter-spacing: 0.36px;
         }
     }
 
@@ -150,10 +157,31 @@
     // display: flex;
     @include displayed();
     justify-content: space-between;
+    align-items: baseline;
+    gap: 4px;
+
+    @media screen and (min-width: 768px) {
+        gap: 12px;
+    }
 
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+}
+
+.services-list__join-line {
+    display: block;
+    height: 1px;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: rgba(157, 164, 189, 0.12);
+
+  @media screen and (min-width:1200px) {
+      &--dark-color {
+        background-color: #000000;
+    }
+  }
 }
 
 .button--services-button {
