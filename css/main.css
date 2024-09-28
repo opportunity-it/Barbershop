@@ -29,7 +29,7 @@ img {
   max-width: 100%;
 }
 
-.contacts-list, .gallery-list, .barbers-list, .benefits-list, .services-list, .social-list, .header-list, .mobile-social-list, .mobile-menu, .social-icons {
+.contacts-list, .gallery-list, .barbers-list, .benefits-list, .services-list, .list-slider, .social-list, .header-list, .mobile-social-list, .mobile-menu, .social-icons {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -1119,6 +1119,26 @@ summary {
   .hero-text {
     max-width: 358px;
   }
+}
+
+.list-slider__button-slider {
+  padding: 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.3636363636;
+  letter-spacing: 1.1px;
+  width: 60px;
+  height: 24px;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+}
+.list-slider__button-slider::after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.6);
 }
 
 .about {
