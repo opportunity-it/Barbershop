@@ -1043,6 +1043,7 @@ summary {
 
 @media screen and (min-width: 768px) {
   .hero-description {
+    position: relative;
     padding-top: 272px;
     padding-left: 120px;
     padding-bottom: 237px;
@@ -1121,8 +1122,26 @@ summary {
   }
 }
 
+.list-slider {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 27px;
+}
+
 .list-slider__button-slider {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.3636363636;
@@ -1132,6 +1151,7 @@ summary {
   color: #ffffff;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .list-slider__button-slider::after {
   content: " ";
@@ -1139,6 +1159,11 @@ summary {
   width: 60px;
   height: 1px;
   background: rgba(157, 164, 189, 0.6);
+}
+.list-slider__button-slider--direction {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .about {
