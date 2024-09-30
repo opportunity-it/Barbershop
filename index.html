@@ -19,7 +19,7 @@
 
   <body>
     <!-- header -->
-    <!-- <header class="header" data-header>
+    <header class="header" data-header>
       <div class="container header__container">
         <nav class="header__nav">
           <a href="./index.html" class="logo">
@@ -73,17 +73,17 @@
           >
             Online-booking
           </button>
-        </div> -->
-        <!-- <button class="menu-toggle menu-toggle--indent js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        </div>
+    <!-- <button class="menu-toggle menu-toggle--indent js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu-toggle__mobile-open" width="40" height="40">
           <use href="./images/sprite.svg#mobile-open"></use>
         </svg>
       </button> -->
-        <!-- <div class="header-burger">
+    <div class="header-burger">
           <span></span>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- hero -->
       <section class="hero">
@@ -129,16 +129,27 @@
             </p>
             <ul class="list-slider">
               <li class="list-slider__item">
-                <button type="button" class="list-slider__button-slider">
+                <button
+                  type="button"
+                  class="list-slider__button-slider list-slider__button-slider--back"
+                >
                   Back
                 </button>
               </li>
               <li class="list-slider__item">
-                <button type="button" class="list-slider__button-slider list-slider__button-slider--direction">
+                <button
+                  type="button"
+                  class="list-slider__button-slider list-slider__button-slider--direction list-slider__button-slider--next"
+                >
                   Next
                 </button>
               </li>
             </ul>
+            <div>
+              <div class="hero-description--image"></div>
+              <div class="hero-description--image"></div>
+              <div class="hero-description--image"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -1178,5 +1189,6 @@
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
